@@ -9,6 +9,8 @@ export class DummyComponentComponent implements OnInit {
 
   constructor() { }
 
+  label = 'dummy button label';
+
   ngOnInit(): void {
   }
 
