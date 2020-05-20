@@ -1,10 +1,26 @@
+
 .label-name{
     background-color: white;
     position: fixed;
     margin: 0 auto;
-    top: -4px;
-    left: 20px;
-    padding: 3px;
-    color:blue;
+    top: 44px;
+    left: 70px;
+    padding: 2px;
+    color: blue;
     font-size: small;
+    height: 19px;
 }
+.label-email{
+    background-color: white;
+    position: fixed;
+    margin: 0 auto;
+    top: 92px;
+    left: 71px;
+    padding: 2px;
+    color: blue;
+    font-size: small;
+    height: 19;
+
+}
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
