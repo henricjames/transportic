@@ -1,0 +1,27 @@
+@import '../../../styles/variables';
+
+.button {
+  min-height: 48px;
+  line-height: 16px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &_outline {
+    border: 1px solid $light-grey;
+  }
+
+  &_rounded {
+    border-radius: 21px;
+    padding-left: 18px;
+    padding-right: 18px;
+    min-height: 42px;
+  }
+
+  &:disabled {
+    background-color: $light-grey;
+    color: $color-black;
+    border: none;
+  }
+}

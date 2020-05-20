@@ -7,8 +7,11 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
+  @Input() fullWidth = false;
+  @Input() outline = false;
+  @Input() disabled = false;
+  @Input() rounded = false;
   @Input() label: string;
-  @Input() styles: any;
 
   constructor() { }
 

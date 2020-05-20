@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   label = 'button label';
+
+  buttonClick() {
+    console.log('button clicked');
+  }
 }

@@ -1,3 +1,5 @@
-<div id="button">
-  <button type="button" class="btn btn-primary" [ngStyle]="styles">{{label}}</button>
-</div>
+<button type="button" class="btn button" 
+        [ngClass]="[fullWidth? 'w-100' : '', outline? 'button_outline btn-outline-primary': 'btn-primary', rounded? 'button_rounded' : '']" 
+        [disabled]="disabled">
+  {{ label }}
+</button>
