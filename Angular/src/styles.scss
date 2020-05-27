@@ -1,9 +1,15 @@
+.portic-wrapper {
+  margin: 26px 18px;
+  height: 732px;
+  box-sizing: border-box;
+}
 .portic-wrapper__textfield {
   position: relative;
   height: 56px;
   width: 312px;
   box-sizing: border-box;
 }
+
 .portic-wrapper__input {
   box-sizing: border-box;
   height: 48px;
@@ -12,9 +18,15 @@
   border-radius: 4px;
   background-color: #FFFFFF;
 }
-.portic-wrapper {
-  margin: 26px 18px;
-  height: 732px;
+.portic-wrapper__label-value{  
+  height: 13px;
+  width: 86px;
+  color: #062C76;
+  font-family: Rubik;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  line-height: 13px;
   box-sizing: border-box;
 }
 .portic-wrapper__label {
@@ -27,18 +39,5 @@
   margin: 0 4px;
   box-sizing: border-box;
 }
-.portic-wrapper__label__value{  
-  height: 13px;
-  width: 86px;
-  color: #062C76;
-  font-family: Rubik;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: -0.1px;
-  line-height: 13px;
-  box-sizing: border-box;
-}
-
-
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
