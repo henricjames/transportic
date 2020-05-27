@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'transportic';
+
+  label = 'button label';
+
+  buttonClick() {
+    console.log('button clicked');
+  }
 }
