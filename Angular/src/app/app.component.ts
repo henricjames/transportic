@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'transportic';
-  email: string = 'USER NAME';
+  email: string = 'USUARIO/EMAIL';
 }
