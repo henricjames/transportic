@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TextfieldComponent } from './textfield/textfield.component';
+import { DummyComponent } from './dummy/dummy.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TextfieldComponent,
+    DummyComponent,
     
     
   ],
