@@ -5,22 +5,20 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TextfieldComponent } from './textfield/textfield.component';
-import { DummyComponent } from './dummy/dummy.component';
-
+import {ReactiveFormsModule,FormsModule} from  '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     TextfieldComponent,
-    DummyComponent,
-    
-    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

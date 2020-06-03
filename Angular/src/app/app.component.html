@@ -1,2 +1,4 @@
-<app-textfield [labelname] ="email"></app-textfield>
-<router-outlet></router-outlet>
+<form [formGroup]="transporticForm">
+    <app-textfield labelname ="USUARIO/EMAIL" formControlName="name">
+    </app-textfield>
+</form>
