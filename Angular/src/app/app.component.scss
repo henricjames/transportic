@@ -1,5 +1,22 @@
 .textfield-label{
     position: fixed;
     left: 20px;
+}
+.home {
+    text-align: left;
+    display: block;
+    width: 100%;
+}
 
+.comp {
+    text-align: left;
+    display: block;
+    width: 100%;
+}
+
+.content {
+    text-align: left;
+    img {
+        opacity: .2;
+    }
 }

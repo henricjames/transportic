@@ -17,11 +17,13 @@ $textcolor: #062C76;
     box-sizing: border-box;
     color: $textcolor;
     font-size: 11px;
+    padding-right:5px;
   }
 
   .portic__input {
     border: 1px solid #D3D9E5;
-    border-radius: 8px;
+    border-radius: 4px;
+    height:54px;
 
     &:focus {
       outline: none;
