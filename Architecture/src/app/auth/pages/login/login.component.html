@@ -1,4 +1,4 @@
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="col-sm-4">
       <alert type="success">
@@ -8,4 +8,10 @@
       </alert>
     </div>
   </div>
-</div>
+</div> -->
+<app-button label="Full width" [fullWidth]="true"></app-button>
+<app-button label="Full width disabled" [fullWidth]="true" [disabled]="true"></app-button>
+<app-button label="Small width primary"></app-button>
+<app-button label="Small width transparent" [outline]="true"></app-button>
+<app-button label="Small width rounded transparent" [rounded]="true" [outline]="true" (click)=buttonClick()>
+</app-button>

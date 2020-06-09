@@ -9,7 +9,14 @@ export class LoginComponent implements OnInit {
 
   constructor() { }
 
+  label = 'button label';
+
   ngOnInit(): void {
+  }
+
+
+  buttonClick() {
+    console.log('button clicked');
   }
 
 }

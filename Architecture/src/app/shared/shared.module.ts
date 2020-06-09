@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { ButtonComponent } from './button/button.component';
 
 import { AlertModule } from 'ngx-bootstrap/alert';
 
@@ -11,7 +12,9 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    ButtonComponent
+  ],
   imports: [
     CommonModule,
     TranslateModule,
@@ -19,7 +22,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   exports: [
     TranslateModule,
-    AlertModule
+    AlertModule,
+    ButtonComponent
   ]
 })
 export class SharedModule { }
