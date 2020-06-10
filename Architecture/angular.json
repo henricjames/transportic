@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "portic"
+    }
+  },
+  "defaultProject": "portic",
+  "cli": {
+    "analytics": false
+  }
 }
