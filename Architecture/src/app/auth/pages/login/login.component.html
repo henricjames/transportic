@@ -1,4 +1,4 @@
-<!-- <div class="container">
+<!--<div class="container">
   <div class="row">
     <div class="col-sm-4">
       <alert type="success">
@@ -7,9 +7,13 @@
         </strong>
       </alert>
     </div>
-  </div>
-</div>
-</div> -->
+  </div>-->
+
+<form [formGroup]="transporticForm">
+  <app-textfield labelname ="LABEL NAME" formControlName="name">
+  
+  </app-textfield>
+</form>
 <app-button label="Full width" [fullWidth]="true"></app-button>
 <app-button label="Full width disabled" [fullWidth]="true" [disabled]="true"></app-button>
 <app-button label="Small width primary"></app-button>
