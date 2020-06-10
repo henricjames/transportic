@@ -1,5 +1,6 @@
 import { Component, OnInit,Input,ChangeDetectionStrategy} from '@angular/core';
-import { MakeProvider, AbstractValueAccessor } from '../abstractclass';
+import { MakeProvider, AbstractValueAccessor } from './abstractclass';
+
 
 @Component({
   selector: 'app-textfield',
