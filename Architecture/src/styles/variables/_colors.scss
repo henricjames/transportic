@@ -1,0 +1,14 @@
+$colors: (
+  primary: #0A4FD8,
+  seconday:#fff,
+  black: #000C26,
+  light-grey: #D3D9E5,
+);
+
+
+$color-primary: map-get($colors, primary);
+$color-black: #000C26;
+$light-grey: #D3D9E5;
+
+
+
