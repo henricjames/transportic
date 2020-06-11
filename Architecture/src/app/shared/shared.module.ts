@@ -7,19 +7,21 @@ import { ButtonComponent } from './button/button.component';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { TextfieldComponent } from './textfield/textfield.component';
 import {ReactiveFormsModule,FormsModule} from  '@angular/forms';
+import { LoaderComponent } from './loader/loader.component';
+import { RegformComponent } from './regform/regform.component';
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 
 @NgModule({
-  declarations: [TextfieldComponent,ButtonComponent],
+  declarations: [TextfieldComponent,ButtonComponent, LoaderComponent, RegformComponent],
   
   imports: [
     CommonModule,
     TranslateModule,
     AlertModule.forRoot(),
     ReactiveFormsModule,
-    FormsModule,
+    FormsModule
   ],
   exports: [
     TranslateModule,
@@ -27,7 +29,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     TextfieldComponent,
     ReactiveFormsModule,
     FormsModule,
-    ButtonComponent
+    ButtonComponent,
+    LoaderComponent,
+    RegformComponent
   ]
 })
 export class SharedModule { }
