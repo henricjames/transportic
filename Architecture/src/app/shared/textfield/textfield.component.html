@@ -1,0 +1,11 @@
+
+<div class="portic__textfield">
+  <label class="portic__label">{{labelname}}</label>
+  <input 
+    [type]="type"
+    class="portic__input p-2 w-100" 
+    [ngModel] ="value"
+    (ngModelChange)="onInput($event)"
+  >
+</div> 
+

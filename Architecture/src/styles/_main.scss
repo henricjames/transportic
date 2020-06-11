@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import './variables/_variables';
+$primary: #0A4FD8;
+$color-black: #000C26;
+$light-grey: #D3D9E5;
+
+$font-size: 14px;
+$font-weight: 400;
+$line-height: 18px;
+$font-family-default: 'Rubik',
+sans-serif;
+
+*,
+html,
+body {
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color-black;
+  font-family: $font-family-default;
+}
