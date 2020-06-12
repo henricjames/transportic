@@ -1,1 +1,12 @@
-<h1>Registration works!</h1>
+<div class="wrapper">
+    <h1>Registration works</h1>
+    <form [formGroup]="transporticForm" (ngSubmit)="onSubmit(transporticForm)">
+        <app-textfield></app-textfield>
+        <app-textfield></app-textfield>
+        <input formControlName="name" placeholder="Your name">
+        <input formControlName="email" placeholder="Your email">
+        <input formControlName="message" placeholder="Your message">
+
+        <button type="submit">Send</button>
+    </form>
+</div>
