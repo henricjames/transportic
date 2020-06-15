@@ -18,7 +18,7 @@ export class RegistrationComponent implements OnInit {
   isActiveInfo: boolean = true
   isActiveAccount: boolean = false
   isActiveEmail: boolean = false
-  isActive
+  isActive: boolean = false
   constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
@@ -40,9 +40,24 @@ export class RegistrationComponent implements OnInit {
     alert('closed')
   }
   onSubmit(form: FormGroup) {
-    this.openedBool = !this.openedBool
-    this.isActive = !this.isActive;
+    this.openedBool = !this.openedBool    
     this.isActiveInfo = !this.isActiveInfo;
+
     // console.log(this.openedBool, 'Name', this.transporticFormInfo.value);
+  }
+  clickInfo(){
+    this.openedBool = !this.openedBool    
+    this.isActiveInfo = !this.isActiveInfo;
+    this.isActiveAccount = !this.isActiveAccount;
+    // this.transporticFormInfo.reset()
+  }
+  clickEmail(){
+    this.isActiveAccount = !this.isActiveAccount;
+    this.isActive = !this.isActive;    
+  }
+  clickComplete(){
+    console.log('Completed')
+    this.isActive = !this.isActive;        
+    this.isActiveAccount = !this.isActiveAccount;    
   }
 }
