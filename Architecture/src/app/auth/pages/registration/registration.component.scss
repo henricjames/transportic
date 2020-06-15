@@ -13,4 +13,16 @@
         border-radius: 2px;
         margin-bottom: 20px;
     }
+    .account {
+        display: none;
+    }
+    .info {
+        display: none;
+    }
+    .email {
+        display: none;
+    }
+    .active {
+        display: block;
+    }
 }

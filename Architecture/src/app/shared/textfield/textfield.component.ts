@@ -15,6 +15,7 @@ export class TextfieldComponent extends AbstractValueAccessor implements OnInit 
   
   @Input() labelname: string;
   @Input() type: string="text";
+  @Input() formControlName: string;
 
   constructor() { 
     super();
@@ -25,5 +26,6 @@ export class TextfieldComponent extends AbstractValueAccessor implements OnInit 
   onInput(inputValue){
     this.writeValue(inputValue);
   }
+  
 
 }

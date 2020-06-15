@@ -1,12 +1,30 @@
 <div class="wrapper">
     <h1>Registration works</h1>
-    <form [formGroup]="transporticForm" (ngSubmit)="onSubmit(transporticForm)">
-        <app-textfield></app-textfield>
-        <app-textfield></app-textfield>
-        <input formControlName="name" placeholder="Your name">
-        <input formControlName="email" placeholder="Your email">
-        <input formControlName="message" placeholder="Your message">
+    <div class="info" [class.active]="isActiveInfo">
+        <form [formGroup]="transporticFormInfo" (ngSubmit)="onSubmit(transporticFormInfo)">
+            <div formGroupName="fname">
+                <app-textfield labelname="First Name" formControlName="name"></app-textfield>
+            </div>
+            <div formGroupName="lname">
+                <app-textfield labelname="Last Name" formControlName="lastname/*"></app-textfield>
+            </div>
+            <app-textfield labelname="Password " formControlName="password"></app-textfield>
+            <button type="submit ">Submit</button>
+        </form>
+    </div>
 
-        <button type="submit">Send</button>
-    </form>
+    <div class="account" [class.active]="isActiveAccount">
+        <form [formGroup]="transporticFormAccount" (ngSubmit)="onSubmit(transporticFormAccount)">
+            <app-textfield labelname="Email" formControlName="name"></app-textfield>
+            <app-textfield labelname="Password" formControlName="email"></app-textfield>
+            <button type="submit ">Submit</button>
+        </form>
+    </div>
+
+    <div class="email" [class.active]="isActive">
+        <form [formGroup]="transporticFormEmail" (ngSubmit)="onSubmit(transporticFormEmail)">
+            <app-textfield labelname="Email" formControlName="name"></app-textfield>
+            <button type="submit ">Submit</button>
+        </form>
+    </div>
 </div>

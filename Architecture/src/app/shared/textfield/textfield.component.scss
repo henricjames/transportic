@@ -1,32 +1,28 @@
 $textcolor: #062C76;
-
 .portic__textfield {
-  margin: 26px 18px;
-  position: relative;
-  height: 56px;
-  width: 312px;
-  box-sizing: border-box;
-
-  .portic__label {
-    background-color: white;
-    position: absolute;
-    top: -8px;
-    left: 8px;
-    height: 13px;
-    margin: 0 4px;
+    margin: 26px 18px;
+    position: relative;
+    height: 56px;
+    width: 312px;
     box-sizing: border-box;
-    color: $textcolor;
-    font-size: 11px;
-    padding-right:5px;
-  }
-
-  .portic__input {
-    border: 1px solid #D3D9E5;
-    border-radius: 4px;
-    height:54px;
-
-    &:focus {
-      outline: none;
+    .portic__label {
+        // background-color: white;
+        position: absolute;
+        top: -18px;
+        left: 0px;
+        height: 13px;
+        margin: 0 4px;
+        box-sizing: border-box;
+        color: $textcolor;
+        font-size: 11px;
+        padding-right: 5px;
     }
-  }
+    .portic__input {
+        border: 1px solid #D3D9E5;
+        border-radius: 4px;
+        height: 54px;
+        &:focus {
+            outline: none;
+        }
+    }
 }
