@@ -7,7 +7,31 @@
     padding: 20px;
     border-radius: 10px;
     .stepper {
-        .block01 {}
+        float: right;
+        width: 150px;
+        .stepDot {
+            float: left;
+            width: 7px;
+            height: 7px;
+            background-color: darkcyan;
+            float: left;
+            margin-left: 5px;
+            border-radius: 5px;
+        }
+        .current {
+            width: 50px;
+            border-radius: 5px;
+            animation: grow 4s 0s forwards;
+            // animation-direction: reverse;
+        }
+        @keyframes grow {
+            from {
+                width: 10px;
+            }
+            to {
+                width: 100px;
+            }
+        }
         .block02 {}
         .block03 {}
     }

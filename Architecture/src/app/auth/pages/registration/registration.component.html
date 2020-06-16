@@ -1,11 +1,11 @@
 <div class="wrapper">
-    <h1>Personal Info</h1>
+    <h1>Registration</h1>
     <div class="stepper">
-        <div class="stepDot block01"></div>
-        <div class="stepDot block02"></div>
-        <div class="stepDot block03"></div>
+        <div class="stepDot block01" [ngClass]="{'current':infoStepper}"></div>
+        <div class="stepDot block02" [ngClass]="{'current':accountStepper}"></div>
+        <div class="stepDot block03" [ngClass]="{'current':emailStepper}"></div>
     </div>
-    <div class="info" [class.active]="isActiveInfo">
+    <div [ngClass]="{'info':!isActiveInfo}">
         <form [formGroup]="transporticFormInfo">
             <div formGroupName="fname">
                 <app-textfield labelname="First Name" formControlName="name"></app-textfield>
@@ -26,7 +26,7 @@
         </form>
     </div>
 
-    <div class="email" [class.active]="isActive">
+    <div class="email" [class.active]="isActiveEmail">
         <form [formGroup]="transporticFormEmail">
             <app-textfield labelname="Email" formControlName="name"></app-textfield>
             <button type="submit" (click)="clickComplete()">Submit</button>
