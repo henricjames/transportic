@@ -28,6 +28,7 @@ export class TextfieldComponent extends AbstractValueAccessor
     this.writeValue(inputValue);
   }
 
+
   toggleVisibility() {
     console.log(this.type);
     if (this.type == 'password') this.type = 'text';

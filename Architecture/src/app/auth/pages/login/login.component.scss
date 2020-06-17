@@ -1,5 +1,12 @@
 @import '../../../../styles/variables/spacing';
+.btn-ss {
+    margin-left: $spacer-double * 2;
+}
 
-.btn-ss{
-  margin-left: $spacer-double * 2;
+hr {
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    padding: 20px;
 }
