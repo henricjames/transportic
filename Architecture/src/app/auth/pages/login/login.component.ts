@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+
 
 @Component({
   selector: 'app-login',
@@ -7,23 +7,12 @@ import { FormGroup, FormBuilder } from '@angular/forms';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-  transporticForm: FormGroup;
-  constructor(private fb: FormBuilder) { }
-
   label = 'button label';
-
-  ngOnInit(): void {
-    this.transporticForm = this.fb.group({
-      name: '',
-      //name: ['', Validators.required],
-      password: ''
-    })
-    this.transporticForm.valueChanges.subscribe(console.log);
+  ngOnInit(): void {}
+  goreg(){
+    (window.location.href='http://localhost:4200/login/registration');
   }
-
-
   buttonClick() {
     console.log('button clicked');
   }
-
 }
