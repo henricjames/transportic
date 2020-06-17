@@ -1,0 +1,6 @@
+<button class="btn btn-primary btn-ss" (click)="showSpinner()">{{text}}</button>
+<div class="col-md-12 spinner">
+    <div class="spinner-border" role="status" *ngIf="show">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
