@@ -20,9 +20,7 @@
         }
         .current {
             width: 50px;
-            border-radius: 5px;
             animation: grow 4s 0s forwards;
-            // animation-direction: reverse;
         }
         @keyframes grow {
             from {
