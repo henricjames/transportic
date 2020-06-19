@@ -16,6 +16,8 @@ import { AuthService } from '../../auth.service';
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   isSubmitted = false;
+  // transporticForm: FormGroup;
+  // submitted = false;
 
   constructor(
     private authService: AuthService,
@@ -28,7 +30,6 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    console.log(this.loginForm.value);
     this.isSubmitted = true;
     if (this.loginForm.invalid) {
       return;
@@ -45,5 +46,10 @@ export class LoginComponent implements OnInit {
       ]),
       password: new FormControl('', [Validators.required]),
     });
+    // this.loginForm = this.formBuilder.group({
+    //   name: ['', Validators.required],
+    //   email: ['', [Validators.required, Validators.email]],
+    // });
+    // this.loginForm.valueChanges.subscribe(console.log);
   }
 }
