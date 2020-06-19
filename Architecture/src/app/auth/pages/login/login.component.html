@@ -1,23 +1,14 @@
-<!--
-<form [formGroup]="transporticForm">
-  <app-textfield labelname ="Label Name" formControlName="name" (ngSubmit)="onSubmit()" [ngClass]="{ 'is-invalid': submitted && transporticFormControl.name.errors }">
-  </app-textfield>
-  <span class="text-danger" *ngIf="submitted && transporticFormControl.name.errors">
-    User Name is required
-  </span>
-  <app-textfield labelname ="Email" formControlName="email">
-  </app-textfield>
-  <button type="submit" class="btn btn-success">Register</button>
-</form>
-<div class="wrapper">
-    <app-loader></app-loader>
-    <form [formGroup]="transporticForm">
-        <app-textfield labelname="LABEL NAME" formControlName="name"></app-textfield>
-    </form>
-</div>-->
-<form [formGroup]="transporticForm">
-  <app-textfield labelname ="Label Name" formControlName="name">
-  </app-textfield>
-  <app-textfield labelname ="Email" formControlName="email">
-  </app-textfield>
-</form>
+<!--<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <alert type="success">
+        <strong>
+          {{"LOGIN.MESSAGE" | translate }}
+        </strong>
+      </alert>
+    </div>
+  </div>-->
+
+<a class="btn" href="/login/registration">
+    <button class="btn btn-primary btn-ss">click me</button>
+</a>
