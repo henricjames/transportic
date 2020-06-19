@@ -44,11 +44,11 @@ hr {
 
 .login-container {
   background: #ebebeb;
-  padding: 12px;
+  padding:0px 12px;
 }
 
 .login p {
-  padding: 12px;
+  padding: 0px 12px;
 }
 
 .login input {
@@ -95,20 +95,23 @@ hr {
 }
 
 .buttonInicia {
+  margin-top: 17px;
+  margin-bottom: 8px;
   height: 48px;
   width: 312px;
   border-radius: 4px;
   background-color: #0a4fd8;
-  margin-left: 24px;
+  margin-left: 9px;
 }
 .buttonBackground {
+  margin-bottom: 20px;
   box-sizing: border-box;
   height: 48px;
   width: 312px;
   border: 1px solid #d3d9e5;
   border-radius: 4px;
   background-color: #ffffff;
-  margin-left: 24px;
+  margin-left: 9px;
 }
 
 .textInicia {
@@ -154,7 +157,7 @@ hr {
   letter-spacing: 0;
   line-height: 14px;
   text-align: right;
-  margin-left: 164px;
+  margin-left: 158px;
 }
 .ayuda-terminos-de-se {
   height: 24px;
@@ -228,4 +231,9 @@ hr {
   letter-spacing: 0;
   line-height: 14px;
   text-align: center;
+}
+.transportic_logo{
+  width:55px;
+  margin-bottom: 22px;
+
 }

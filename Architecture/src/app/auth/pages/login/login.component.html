@@ -1,5 +1,8 @@
 <div class="login">
   <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class=transportic_logo>
+      <img src="assets/transportic.png">
+    </div>
     <div [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
       <app-textfield
         formControlName="email"
@@ -108,7 +111,7 @@
   </label>
   <app-cookies></app-cookies>
 </div>
-<!-- 
+<!--
 <form [formGroup]="transporticForm">
   <app-textfield labelname ="Label Name" formControlName="name">
   </app-textfield>
