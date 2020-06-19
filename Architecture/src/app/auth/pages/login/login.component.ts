@@ -1,18 +1,49 @@
 import { Component, OnInit } from '@angular/core';
-
+import {
+  FormBuilder,
+  FormGroup,
+  FormControl,
+  Validators,
+} from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from '../../auth.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  label = 'button label';
-  ngOnInit(): void {}
-  goreg(){
-    (window.location.href='http://localhost:4200/login/registration');
+  loginForm: FormGroup;
+  isSubmitted = false;
+
+  constructor(
+    private authService: AuthService,
+    private router: Router,
+    private formBuilder: FormBuilder
+  ) {}
+
+  get formControls() {
+    return this.loginForm.controls;
   }
-  buttonClick() {
-    console.log('button clicked');
+
+  login() {
+    console.log(this.loginForm.value);
+    this.isSubmitted = true;
+    if (this.loginForm.invalid) {
+      return;
+    }
+    this.authService.login(this.loginForm.value);
+    this.router.navigateByUrl('/admin');
+  }
+
+  ngOnInit() {
+    this.loginForm = this.formBuilder.group({
+      email: new FormControl('', [
+        Validators.required,
+        // Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
+      ]),
+      password: new FormControl('', [Validators.required]),
+    });
   }
 }

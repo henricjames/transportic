@@ -1,12 +1,231 @@
-@import '../../../../styles/variables/spacing';
+@import "../../../../styles/main";
+
 .btn-ss {
-    margin-left: $spacer-double * 2;
+  margin-left: $spacer-double * 2;
 }
 
 hr {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .wrapper {
-    padding: 20px;
+  padding: 20px;
+}
+
+.login {
+  width: 400px;
+  margin: 16px auto;
+  font-size: 16px;
+}
+
+.login-header,
+.login p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.login-triangle {
+  width: 0;
+  margin-right: auto;
+  margin-left: auto;
+  border: 12px solid transparent;
+  border-bottom-color: rgb(15, 66, 107);
+}
+
+.login-header {
+  background: rgb(12, 77, 129);
+  padding: 20px;
+  font-size: 1.4em;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.login-container {
+  background: #ebebeb;
+  padding: 12px;
+}
+
+.login p {
+  padding: 12px;
+}
+
+.login input {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 16px;
+  outline: 0;
+  font-family: inherit;
+  font-size: 0.95em;
+}
+
+.login input[type="email"],
+.login input[type="password"] {
+  background: #fff;
+  border-color: #bbb;
+  color: #555;
+}
+
+.login input[type="email"]:focus,
+.login input[type="password"]:focus {
+  border-color: #888;
+}
+
+.login input[type="submit"] {
+  background: rgb(1, 29, 51);
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+  background: #17c;
+}
+
+.login input[type="submit"]:focus {
+  border-color: #05a;
+}
+.button-cta-secondary {
+  height: 48px;
+  width: 312px;
+}
+
+.buttonInicia {
+  height: 48px;
+  width: 312px;
+  border-radius: 4px;
+  background-color: #0a4fd8;
+  margin-left: 24px;
+}
+.buttonBackground {
+  box-sizing: border-box;
+  height: 48px;
+  width: 312px;
+  border: 1px solid #d3d9e5;
+  border-radius: 4px;
+  background-color: #ffffff;
+  margin-left: 24px;
+}
+
+.textInicia {
+  height: 17px;
+  width: 221.87px;
+  color: #ffffff;
+  font-family: $font-family-default;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+}
+.textRegistrate {
+  height: 17px;
+  width: 213.87px;
+  color: #0a4fd8;
+  font-family: $font-family-default;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+}
+.textAccede {
+  height: 17px;
+  width: 253.22px;
+  color: #0a4fd8;
+  font-family: $font-family-default;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+}
+.has-olvidado-tu-con {
+  height: 14px;
+  width: 172px;
+  color: #0a4fd8;
+  font-family: $font-family-default;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 14px;
+  text-align: right;
+  margin-left: 164px;
+}
+.ayuda-terminos-de-se {
+  height: 24px;
+  width: 312px;
+  color: #0a4fd8;
+  font-family: $font-family-default;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-left: 24px;
+}
+.portic-barcel {
+  height: 16px;
+  width: 300px;
+  color: #888888;
+  font-family: $font-family-default;
+  font-size: 12px;
+  letter-spacing: -0.25px;
+  line-height: 16px;
+  margin-left: 24px;
+}
+.idioma {
+  height: 16px;
+  width: 46px;
+  color: #062c76;
+  font-family: $font-family-default;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-left: 24px;
+}
+.esp {
+  height: 14px;
+  width: 35px;
+  color: #0a4fd8;
+  font-family: $font-family-default;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 14px;
+  text-align: center;
+}
+.cat {
+  height: 14px;
+  width: 34px;
+  color: #000c26;
+  font-family: $font-family-default;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+  text-align: center;
+}
+.eng {
+  height: 14px;
+  width: 36px;
+  color: #000c26;
+  font-family: $font-family-default;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+  text-align: center;
+}
+.fra {
+  height: 14px;
+  width: 35px;
+  color: #000c26;
+  font-family: $font-family-default;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 14px;
+  text-align: center;
 }
