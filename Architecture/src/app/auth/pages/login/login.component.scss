@@ -44,7 +44,7 @@ hr {
 
 .login-container {
   background: #ebebeb;
-  padding:0px 12px;
+  padding: 0px 12px;
 }
 
 .login p {
@@ -90,6 +90,7 @@ hr {
 .login input[type="submit"]:focus {
   border-color: #05a;
 }
+
 .button-cta-secondary {
   height: 48px;
   width: 312px;
@@ -104,6 +105,7 @@ hr {
   background-color: #0a4fd8;
   margin-left: 9px;
 }
+
 .buttonBackground {
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -126,6 +128,7 @@ hr {
   line-height: 17px;
   text-align: center;
 }
+
 .textRegistrate {
   height: 17px;
   width: 213.87px;
@@ -137,6 +140,7 @@ hr {
   line-height: 17px;
   text-align: center;
 }
+
 .textAccede {
   height: 17px;
   width: 253.22px;
@@ -148,6 +152,7 @@ hr {
   line-height: 17px;
   text-align: center;
 }
+
 .has-olvidado-tu-con {
   height: 14px;
   width: 172px;
@@ -160,17 +165,23 @@ hr {
   text-align: right;
   margin-left: 158px;
 }
-.ayuda-terminos-de-se {
-  height: 24px;
-  width: 312px;
-  color: #0a4fd8;
-  font-family: $font-family-default;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 24px;
-  margin-left: 24px;
+
+ul {
+  padding-left: 0px;
+
+  a {
+    height: 24px;
+    width: 312px;
+    color: #0a4fd8;
+    font-family: $font-family-default;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-left: 24px;
+  }
 }
+
 .portic-barcel {
   height: 16px;
   width: 300px;
@@ -181,60 +192,9 @@ hr {
   line-height: 16px;
   margin-left: 24px;
 }
-.idioma {
-  height: 16px;
-  width: 46px;
-  color: #062c76;
-  font-family: $font-family-default;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 16px;
-  margin-left: 24px;
-}
-.esp {
-  height: 14px;
-  width: 35px;
-  color: #0a4fd8;
-  font-family: $font-family-default;
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 14px;
-  text-align: center;
-}
-.cat {
-  height: 14px;
-  width: 34px;
-  color: #000c26;
-  font-family: $font-family-default;
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: 14px;
-  text-align: center;
-}
-.eng {
-  height: 14px;
-  width: 36px;
-  color: #000c26;
-  font-family: $font-family-default;
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: 14px;
-  text-align: center;
-}
-.fra {
-  height: 14px;
-  width: 35px;
-  color: #000c26;
-  font-family: $font-family-default;
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: 14px;
-  text-align: center;
-}
-.transportic_logo{
-  width:55px;
+
+.transportic_logo {
+  width: 55px;
   margin-bottom: 22px;
 
 }

@@ -1,16 +1,9 @@
 <div class="form-group">
   <label class="form-group__label">{{labelname}}</label>
-  <input
-    [type]="type"
-    class="form-group__input p-2 w-100"
-    [ngModel] ="value"
-    (ngModelChange)="onInput($event)"
-  >
+  <input [type]="type" class="form-group__input p-2 w-100" [ngModel]="value" (ngModelChange)="onInput($event)">
   <div *ngIf="showPasswordIcon" class="ic-eye" (click)="toggleVisibility()">
     <i class="fa fa-eye" aria-hidden="true"></i>
   </div>
 </div>
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
+<link rel="stylesheet" type="text/css"
+  href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
