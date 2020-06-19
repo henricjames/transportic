@@ -1,55 +1,64 @@
-.wrapper {
-    width: 500px;
-    height: 500px;
-    margin: 0 auto;
-    background: #f2f2f2;
-    margin-top: 50px;
-    padding: 20px;
-    border-radius: 10px;
-    .stepper {
-        float: right;
-        width: 150px;
-        .stepDot {
-            float: left;
-            width: 7px;
-            height: 7px;
-            background-color: darkcyan;
-            float: left;
-            margin-left: 5px;
-            border-radius: 5px;
-        }
-        .current {
-            width: 50px;
-            animation: grow 4s 0s forwards;
-        }
-        @keyframes grow {
-            from {
-                width: 10px;
+        .wrapper {
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            background: #f2f2f2;
+            margin-top: 50px;
+            padding: 20px;
+            border-radius: 10px;
+            .wrapBox {
+                width: 450px;
+                overflow: hidden;
+                position: relative;
+                .regDiv {
+                    // right: 450px;
+                    // position: absolute;
+                }
             }
-            to {
-                width: 100px;
+            .stepper {
+                float: right;
+                width: 150px;
+                .stepDot {
+                    float: left;
+                    width: 7px;
+                    height: 7px;
+                    background-color: darkcyan;
+                    float: left;
+                    margin-left: 5px;
+                    border-radius: 5px;
+                }
+                .current {
+                    width: 50px;
+                    animation: grow 4s 0s forwards;
+                }
+                @keyframes grow {
+                    from {
+                        width: 10px;
+                    }
+                    to {
+                        width: 100px;
+                    }
+                }
+                .block02 {}
+                .block03 {}
+            }
+            input {
+                border: 1px;
+                width: 75%;
+                padding: 10px;
+                border-radius: 2px;
+                margin-bottom: 20px;
+            }
+            .account {
+                display: none;
+            }
+            .info {
+                display: none;
+            }
+            .email {
+                display: none;
+            }
+            .active {
+                display: block;
             }
         }
-        .block02 {}
-        .block03 {}
-    }
-    input {
-        border: 1px;
-        width: 75%;
-        padding: 10px;
-        border-radius: 2px;
-        margin-bottom: 20px;
-    }
-    .account {
-        display: none;
-    }
-    .info {
-        display: none;
-    }
-    .email {
-        display: none;
-    }
-    .active {
-        display: block;
-    }
-}
