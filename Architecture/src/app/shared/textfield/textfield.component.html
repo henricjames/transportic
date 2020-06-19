@@ -1,14 +1,16 @@
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<div class="portic__textfield">
-  <label class="portic__label">{{labelname}}</label>
-  <input
+
+<div class="form-group">
+  <label class="form-group__label">{{labelname}}</label>
+  <input 
     [type]="type"
-    class="portic__input p-2 w-100"
+    class="form-group__input p-2 w-100" 
     [ngModel] ="value"
     (ngModelChange)="onInput($event)"
   >
+</div> 
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--
   <div *ngIf="showPasswordIcon" class="ic-eye" (click)="toggleVisibility()">
     <i class="fa fa-eye" aria-hidden="true"></i>
-  </div>
-</div>
+  </div>-->
 

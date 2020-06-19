@@ -6,6 +6,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { SharedModule } from '../shared/shared.module';
 import { RegistrationComponent } from './pages/registration/registration.component';
 
+
 @NgModule({
   declarations: [LoginComponent,RegistrationComponent],
   imports: [
