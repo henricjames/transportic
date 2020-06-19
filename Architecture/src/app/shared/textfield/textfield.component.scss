@@ -1,25 +1,31 @@
 $textcolor: #062C76;
-.portic__textfield {
+.form-group {
     margin: 26px 18px;
     position: relative;
     height: 56px;
+    width: 312px;
     box-sizing: border-box;
-    .portic__label {
+    .form-group__label {
         background-color: white;
         position: absolute;
-        top: -8px;
+        top: -5px;
         left: 8px;
         height: 13px;
         margin: 0 4px;
         box-sizing: border-box;
         color: $textcolor;
         font-size: 11px;
-        padding-right: 5px;
+        padding: 0 4px;
+        font-family: Rubik;
+        font-weight: BOLD;
+        letter-spacing: -0.1px;
+        line-height: 13px;
+        text-transform: uppercase;
     }
-    .portic__input {
+    .form-group__input {
         border: 1px solid #D3D9E5;
         border-radius: 4px;
-        height: 54px;
+        height: 48px;
         &:focus {
             outline: none;
         }
