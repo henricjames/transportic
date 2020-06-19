@@ -1,23 +1,120 @@
+<div class="login">
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div class=transportic_logo>
+      <img src="assets/transportic.png">
+    </div>
+    <div class=input_fields [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
+      <app-textfield
+        formControlName="email"
+        placeholder="Email"
+        labelname="USUARIO/EMAIL"
+      ></app-textfield>
+    </div>
+    <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
+      <div *ngIf="formControls.email.errors.required">Email is required</div>
+      <div *ngIf="formControls.email.errors.pattern">invalid Email address</div>
+    </div>
+    <div class=input_fields
+      [ngClass]="{ 'has-error': isSubmitted && formControls.password.errors }"
+    >
+      <app-textfield
+        formControlName="password"
+        placeholder="Password"
+        labelname="CONTRASEÑA"
+      ></app-textfield>
+    </div>
+    <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
+      <div *ngIf="formControls.password.errors.required">
+        Password is required
+      </div>
+    </div>
+    <a href ng-click>
+      <label class="has-olvidado-tu-con">
+        ¿Has olvidado tu contraseña?
+      </label>
+    </a>
+    <p>
+      <button
+        type="submit"
+        class="btn buttonInicia"
+        [disabled]="!loginForm.valid"
+      >
+        <label class="textInicia">
+          INICIA SESIÓN
+        </label>
+      </button>
+    </p>
+    <p>
+      <a routerLink="registration">
+        <button type="button" class="btn buttonBackground">
+          <label class="textRegistrate">
+            REGÍSTRATE
+          </label>
+        </button>
+      </a>
+    </p>
+    <p>
+      <button type="button" class="btn buttonBackground">
+        <label class="textAccede">
+          ACCEDE COMO INVITADO
+        </label>
+      </button>
+    </p>
+  </form>
+  <app-customer-component></app-customer-component>
+  <div class="row">
+    <div>
+      <button type="button" class="btn">
+        <label class="idioma">
+          IDIOMA:
+        </label>
+      </button>
+    </div>
+
+    <div>
+      <button type="button" class="btn">
+        <label class="esp">
+          ESP
+        </label>
+      </button>
+    </div>
+
+    <div>
+      <button type="button" class="btn">
+        <label class="cat">
+          CAT
+        </label>
+      </button>
+    </div>
+
+    <div>
+      <button type="button" class="btn">
+        <label class="eng">
+          ENG
+        </label>
+      </button>
+    </div>
+
+    <div>
+      <button type="button" class="btn">
+        <label class="fra">
+          FRA
+        </label>
+      </button>
+    </div>
+  </div>
+  <label class="ayuda-terminos-de-se">
+    Ayuda Términos de Servicio. Política de privacidad
+  </label>
+  <label class="portic-barcel">
+    © 2020 Portic Barcelona. Todos los derechos reservados
+  </label>
+  <app-cookies></app-cookies>
+</div>
 <!--
-<form [formGroup]="transporticForm">
-  <app-textfield labelname ="Label Name" formControlName="name" (ngSubmit)="onSubmit()" [ngClass]="{ 'is-invalid': submitted && transporticFormControl.name.errors }">
-  </app-textfield>
-  <span class="text-danger" *ngIf="submitted && transporticFormControl.name.errors">
-    User Name is required
-  </span>
-  <app-textfield labelname ="Email" formControlName="email">
-  </app-textfield>
-  <button type="submit" class="btn btn-success">Register</button>
-</form>
-<div class="wrapper">
-    <app-loader></app-loader>
-    <form [formGroup]="transporticForm">
-        <app-textfield labelname="LABEL NAME" formControlName="name"></app-textfield>
-    </form>
-</div>-->
 <form [formGroup]="transporticForm">
   <app-textfield labelname ="Label Name" formControlName="name">
   </app-textfield>
   <app-textfield labelname ="Email" formControlName="email">
   </app-textfield>
-</form>
+</form> -->

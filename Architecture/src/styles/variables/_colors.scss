@@ -1,10 +1,16 @@
-$colors: (primary: #0A4FD8,
-  seconday:#fff,
-  black: #000C26,
-  light-grey: #D3D9E5,
+$colors: (
+  primary: #0a4fd8,
+  seconday: #fff,
+  black: #000c26,
+  light-grey: #d3d9e5,
+  blue: #062c76,
+  dark-grey: #888888,
+  white: #ffffff,
 );
-
 
 $color-primary: map-get($colors, primary);
 $color-black: map-get($colors, black);
 $color-light-grey: map-get($colors, light-grey);
+$color-dark-grey: map-get($colors, dark-grey);
+$color-blue: map-get($colors, blue);
+$color-white: map-get($colors, white);

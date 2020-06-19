@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container" name='Test' [style.visibility]=visibility>
+    <div class="surface alert alert alert-dismissible fade show ">
+      <button (click)="goToScreen()" type="button" class="close" data-dismiss="alert">&times;</button>
+      <div class="text">
+        Portic utiliza cookies propias y de terceros para mejorar sus servicios y elaborar información estadístic. Para
+        obtener más información accede a nuestra
+        <a href='https://en.wikipedia.org/wiki/HTTP_cookie' class="text" style="text-decoration: underline;"> Política
+          de cookies</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

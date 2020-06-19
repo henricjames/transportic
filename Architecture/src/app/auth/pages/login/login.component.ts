@@ -1,42 +1,55 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-
+import {
+  FormBuilder,
+  FormGroup,
+  FormControl,
+  Validators,
+} from '@angular/forms';
+import { Router } from '@angular/router';
+import { AuthService } from '../../auth.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  transporticForm: FormGroup;
-  submitted = false;
-  constructor(private fb: FormBuilder) { }
+  loginForm: FormGroup;
+  isSubmitted = false;
+  // transporticForm: FormGroup;
+  // submitted = false;
 
-  label = 'button label';
+  constructor(
+    private authService: AuthService,
+    private router: Router,
+    private formBuilder: FormBuilder
+  ) {}
 
-  ngOnInit(): void {
-    this.transporticForm = this.fb.group({
-      name: ['', Validators.required],
-      email: ['', [Validators.required, Validators.email]]
-     // email: ['', [Validators.required, Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")]],
-    
-    })
-    this.transporticForm.valueChanges.subscribe(console.log);
+  get formControls() {
+    return this.loginForm.controls;
   }
-  get transporticFormControl() { return this.transporticForm.controls; }
 
-
-  onSubmit() {
-    this.submitted = true;
-    // stop here if form is invalid
-    if (this.transporticForm.invalid){
-        return;
+  login() {
+    this.isSubmitted = true;
+    if (this.loginForm.invalid) {
+      return;
     }
-
-    alert('SUCCESS!! :-)')
+    this.authService.login(this.loginForm.value);
+    this.router.navigateByUrl('/admin');
   }
-  
-  buttonClick() {
-    console.log('button clicked');
+
+  ngOnInit() {
+    this.loginForm = this.formBuilder.group({
+      email: new FormControl('', [
+        Validators.required,
+        // Validators.pattern("^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$")
+      ]),
+      password: new FormControl('', [Validators.required]),
+    });
+    // this.loginForm = this.formBuilder.group({
+    //   name: ['', Validators.required],
+    //   email: ['', [Validators.required, Validators.email]],
+    // });
+    // this.loginForm.valueChanges.subscribe(console.log);
   }
 }
