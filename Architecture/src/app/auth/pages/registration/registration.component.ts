@@ -65,12 +65,13 @@ export class RegistrationComponent implements OnInit {
     this.accountStepper=!this.accountStepper       
   }
   clickComplete(){
-    // this.openedBool = !this.openedBool    
-      // this.isActiveAccount = !this.isActiveAccount
+    this.transporticFormInfo.reset()
+    this.openedBool = !this.openedBool
     console.log('Completed')
-    // this.transporticFormEmail.reset(this.transporticFormEmail.value)
-    // this.isActiveEmail = !this.isActiveEmail;
-    //   this.isActiveInfo = !this.isActiveInfo;
-    // this.infoStepper = !this.infoStepper;
+    this.transporticFormEmail.reset(this.transporticFormEmail.value)
+    this.isActiveEmail = !this.isActiveEmail;
+    this.isActiveInfo = !this.isActiveInfo;
+    this.infoStepper = !this.infoStepper;
+    this.emailStepper= !this.emailStepper;
   }
 }
