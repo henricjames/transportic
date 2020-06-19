@@ -1,41 +1,39 @@
 $textcolor: #062C76;
 .form-group {
-  margin: 26px 18px;
-  position: relative;
-  height: 56px;
-  width: 312px;
-  box-sizing: border-box;
-  .form-group__label {
-    background-color: white;
-    position: absolute;
-    top: -5px;
-    left: 8px;
-    height: 13px;
-    margin: 0 4px;
+    margin: 26px 18px;
+    position: relative;
+    height: 56px;
+    width: 312px;
     box-sizing: border-box;
-    color: $textcolor;
-    font-size: 11px;
-    padding:0 4px;
-    font-family: Rubik;
-    font-weight: BOLD;
-    letter-spacing: -0.1px;
-    line-height: 13px;
-    text-transform: uppercase;
-  }
-
-  .form-group__input {
-    border: 1px solid #D3D9E5;
-    border-radius: 4px;
-    height:48px;
-
-    &:focus {
-      outline: none;
+    .form-group__label {
+        background-color: white;
+        position: absolute;
+        top: -5px;
+        left: 8px;
+        height: 13px;
+        margin: 0 4px;
+        box-sizing: border-box;
+        color: $textcolor;
+        font-size: 11px;
+        padding: 0 4px;
+        font-family: Rubik;
+        font-weight: BOLD;
+        letter-spacing: -0.1px;
+        line-height: 13px;
+        text-transform: uppercase;
     }
   }
-}
-.ic-eye{
-  position:absolute;
-  top:30%;
-  right:12px;
-  color:#8D939F;
-}
+.form-group__input {
+        border: 1px solid #D3D9E5;
+        border-radius: 4px;
+        height: 48px;
+        &:focus {
+            outline: none;
+        }
+    }
+    .ic-eye{
+      position:absolute;
+      top:30%;
+      right:12px;
+      color:#8D939F;
+    }

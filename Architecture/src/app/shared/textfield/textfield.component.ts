@@ -16,7 +16,7 @@ import { MakeProvider, AbstractValueAccessor } from './abstractclass';
 export class TextfieldComponent extends AbstractValueAccessor
   implements OnInit {
   @Input() labelname: string;
-  @Input() type: string = 'text';
+  @Input() type: 'text' | 'password' | 'email' = 'text';
   @Input() showPasswordIcon: boolean;
 
   constructor() {
