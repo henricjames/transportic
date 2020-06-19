@@ -2,7 +2,7 @@ import {
   Component,
   OnInit,
   Input,
-  ChangeDetectionStrategy,
+  ChangeDetectionStrategy
 } from '@angular/core';
 import { MakeProvider, AbstractValueAccessor } from './abstractclass';
 
@@ -11,12 +11,12 @@ import { MakeProvider, AbstractValueAccessor } from './abstractclass';
   templateUrl: './textfield.component.html',
   styleUrls: ['./textfield.component.scss'],
   providers: [MakeProvider(TextfieldComponent)],
-  changeDetection: ChangeDetectionStrategy.OnPush,
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TextfieldComponent extends AbstractValueAccessor
   implements OnInit {
   @Input() labelname: string;
-  @Input() type: 'text' | 'password' | 'email' = 'text';
+  @Input() type: string;
   @Input() showPasswordIcon: boolean;
 
   constructor() {
@@ -27,9 +27,12 @@ export class TextfieldComponent extends AbstractValueAccessor
   onInput(inputValue) {
     this.writeValue(inputValue);
   }
+
   toggleVisibility() {
-    console.log(this.type);
-    if (this.type == 'password') this.type = 'text';
-    else this.type = 'password';
+    if (this.type === 'password') {
+      this.type = 'text';
+    } else {
+      this.type = 'password';
+    }
   }
 }

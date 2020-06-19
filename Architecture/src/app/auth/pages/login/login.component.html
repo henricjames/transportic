@@ -4,45 +4,33 @@
       <img src="assets/transportic.png">
     </div>
     <div class=input_fields [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
-      <app-textfield
-        formControlName="email"
-        placeholder="Email"
-        labelname="USUARIO/EMAIL"
-      ></app-textfield>
+      <app-textfield formControlName="email" placeholder="Email" labelname="{{'LOGIN.USERNAME' | translate }}"
+        type="email">
+      </app-textfield>
     </div>
     <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
-      <div *ngIf="formControls.email.errors.required">Email is required</div>
-      <div *ngIf="formControls.email.errors.pattern">invalid Email address</div>
+      <div *ngIf="formControls.email.errors.required"> {{"LOGIN.EMAILREQUIRED" | translate }}</div>
+      <div *ngIf="formControls.email.errors.pattern">{{"LOGIN.INVALIDEMAIL" | translate }}</div>
     </div>
-    <div class=input_fields
-      [ngClass]="{ 'has-error': isSubmitted && formControls.password.errors }"
-    >
-      <app-textfield
-        formControlName="password"
-        placeholder="Password"
-        labelname="CONTRASEÑA"
-        showPasswordIcon=True
-
-      ></app-textfield>
+    <div class=input_fields [ngClass]="{ 'has-error': isSubmitted && formControls.password.errors }">
+      <app-textfield formControlName="password" placeholder="Password" labelname="{{'LOGIN.PASSWORD' | translate }}"
+        type="password" showPasswordIcon=True>
+      </app-textfield>
     </div>
     <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
       <div *ngIf="formControls.password.errors.required">
-        Password is required
+        {{"LOGIN.PASSWORDREQUIRED" | translate }}
       </div>
     </div>
     <a href ng-click>
       <label class="has-olvidado-tu-con">
-        ¿Has olvidado tu contraseña?
+        {{"LOGIN.FORGOTPASSWORD" | translate }}
       </label>
     </a>
     <p>
-      <button
-        type="submit"
-        class="btn buttonInicia"
-        [disabled]="!loginForm.valid"
-      >
+      <button type="submit" class="btn buttonInicia" [disabled]="!loginForm.valid">
         <label class="textInicia">
-          INICIA SESIÓN
+          {{"LOGIN.LOGIN" | translate }}
         </label>
       </button>
     </p>
@@ -50,7 +38,7 @@
       <a routerLink="registration">
         <button type="button" class="btn buttonBackground">
           <label class="textRegistrate">
-            REGÍSTRATE
+            {{"LOGIN.REGISTER" | translate }}
           </label>
         </button>
       </a>
@@ -58,65 +46,20 @@
     <p>
       <button type="button" class="btn buttonBackground">
         <label class="textAccede">
-          ACCEDE COMO INVITADO
+          {{"LOGIN.GUEST" | translate }}
         </label>
       </button>
     </p>
   </form>
   <app-customer-component></app-customer-component>
-  <div class="row">
-    <div>
-      <button type="button" class="btn">
-        <label class="idioma">
-          IDIOMA:
-        </label>
-      </button>
-    </div>
-
-    <div>
-      <button type="button" class="btn">
-        <label class="esp">
-          ESP
-        </label>
-      </button>
-    </div>
-
-    <div>
-      <button type="button" class="btn">
-        <label class="cat">
-          CAT
-        </label>
-      </button>
-    </div>
-
-    <div>
-      <button type="button" class="btn">
-        <label class="eng">
-          ENG
-        </label>
-      </button>
-    </div>
-
-    <div>
-      <button type="button" class="btn">
-        <label class="fra">
-          FRA
-        </label>
-      </button>
-    </div>
-  </div>
-  <label class="ayuda-terminos-de-se">
-    Ayuda Términos de Servicio. Política de privacidad
-  </label>
+  <app-language-translator></app-language-translator>
+  <ul>
+    <a>{{"LOGIN.HELP" | translate }}</a>
+    <a>{{"LOGIN.TERMS" | translate }}</a>
+    <a>{{"LOGIN.PRIVACYPOLICY" | translate }}</a>
+  </ul>
   <label class="portic-barcel">
-    © 2020 Portic Barcelona. Todos los derechos reservados
+    {{"LOGIN.RIGHTS" | translate }}
   </label>
   <app-cookies></app-cookies>
 </div>
-<!--
-<form [formGroup]="transporticForm">
-  <app-textfield labelname ="Label Name" formControlName="name">
-  </app-textfield>
-  <app-textfield labelname ="Email" formControlName="email">
-  </app-textfield>
-</form> -->

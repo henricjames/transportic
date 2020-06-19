@@ -5,8 +5,9 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from './pages/login/login.component';
 import { SharedModule } from '../shared/shared.module';
 import { RegistrationComponent } from './pages/registration/registration.component';
-import { CustomerComponentComponent } from './pages/customer-component/customer-component.component';
+import { CustomerComponentComponent } from './components/customerinfo-component/customerinfo-component.component';
 import { CookiesComponent } from './pages/cookies/cookies.component';
+import { LanguageTranslatorComponent } from './components/language-translator/language-translator.component';
 
 @NgModule({
   declarations: [
@@ -14,14 +15,15 @@ import { CookiesComponent } from './pages/cookies/cookies.component';
     RegistrationComponent,
     CustomerComponentComponent,
     CookiesComponent,
+    LanguageTranslatorComponent
   ],
   imports: [
     CommonModule,
     AuthRoutingModule,
     SharedModule,
     ReactiveFormsModule,
-    FormsModule,
+    FormsModule
   ],
-  exports: [ReactiveFormsModule, FormsModule],
+  exports: [ReactiveFormsModule, FormsModule]
 })
 export class AuthModule {}

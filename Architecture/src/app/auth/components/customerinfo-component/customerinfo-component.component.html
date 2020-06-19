@@ -1,15 +1,14 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
 
-<p class="atencion-al-cliente">ATENCIÓN AL CLIENTE:</p>
-<p class="de-lunes-a-viernes-d">De lunes a viernes de 6.00 a 20.00 sábados de 9.00 a 14.00 horas, a través de los
-  siguientes canales:</p>
+<p class="atencion-al-cliente"> {{"LOGIN.CUSTOMERSUPPORT" | translate }}</p>
+<p class="de-lunes-a-viernes-d">{{"LOGIN.CUSTOMERSUPPORTINFO" | translate }}</p>
 
 <div class="divStyle">
   <div class="input-group-addon ">
     <a href="tel:{{phone}}" class="via-telefonica-34 text">
       <i class="fa fa-phone iconos-ic-call text" id='text'></i>
       <label for="phone">
-        Vía telefónica :
+        {{"LOGIN.TELEPHONE" | translate }}
       </label>
     </a>
     <label class="via-telefonica-34 surface" for="phone">
@@ -24,7 +23,7 @@
       <i class="fa fa-envelope-o iconos-ic-call-iconos-ic-email text" id='text'></i>
       <label for="email">
       </label>
-      Vía email:
+      {{"LOGIN.EMAIL" | translate }}
     </a>
     <label class="via-email-atenciocl" for="email">
       {{email}}
@@ -37,7 +36,7 @@
     <a href="sms://{{phone}}?body={{comment}}" class="via-chat-iniciar-co text ">
       <i class="fa fa-comment-o iconos-ic-call-iconos-ic-chat text" id='text'></i>
       <label for="comment">
-        Vía chat:
+        {{"LOGIN.CHAT" | translate }}
       </label>
     </a>
     <label class="via-chat-iniciar-co" for="comment">
