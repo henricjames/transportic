@@ -3,7 +3,7 @@
     <div class=transportic_logo>
       <img src="assets/transportic.png">
     </div>
-    <div [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
+    <div class=input_fields [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
       <app-textfield
         formControlName="email"
         placeholder="Email"
@@ -14,7 +14,7 @@
       <div *ngIf="formControls.email.errors.required">Email is required</div>
       <div *ngIf="formControls.email.errors.pattern">invalid Email address</div>
     </div>
-    <div
+    <div class=input_fields
       [ngClass]="{ 'has-error': isSubmitted && formControls.password.errors }"
     >
       <app-textfield
