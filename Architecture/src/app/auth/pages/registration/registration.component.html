@@ -1,11 +1,21 @@
 <div class="wrapper">
     <div class="row">
-        <div class="col-12"><img src="../../../../assets/images/registro_01@2x.png" alt="" class="regLogo"></div>
+        <div class="col-12">
+            <a href="/login" class="href" class="iconClose">
+                <i class="fa fa-times fa-2x close" height="14px" width="14px"></i></a>
+        </div>
+        <div class="col-12">
+            <div class="transportic_logo">
+                <img src="assets/transportic.png">
+            </div>
+
+        </div>
         <div class="col-6">
-            <h1>Registration</h1>
+            <!-- <img src="../../../../assets/images/transportic.png" class="logo" width="55px" height="22px" alt=""> -->
+            <h1 class="fL">Registration</h1>
         </div>
         <div class=" col-6 ">
-            <div class="stepper ">
+            <div class="stepper">
                 <div class="stepDot block01 " [ngClass]="{ 'current':infoStepper} "> </div>
                 <div class="stepDot block02 " [ngClass]="{ 'current':accountStepper} "></div>
                 <div class="stepDot block03 " [ngClass]="{ 'current':emailStepper} "></div>

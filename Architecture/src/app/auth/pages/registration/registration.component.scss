@@ -6,10 +6,35 @@
     margin-top: 50px;
     padding: 20px;
     border-radius: 10px;
+    .fL {
+        float: left;
+    }
+    .transportic_logo {
+        width: 55px;
+        margin-bottom: 22px;
+    }
     h1 {
         font-family: 'Rubik', sans-serif;
         font-weight: lighter;
         color: #0A4FD8;
+        margin: 0 18px;
+        float: left;
+    }
+    .iconClose {
+        width: 35px;
+        height: 35px;
+        float: left;
+        margin: 0 18px;
+    }
+    .logo {
+        width: 55px;
+        height: 22px;
+    }
+    .close {
+        color: #666E7D;
+        width: 14px;
+        height: 14px;
+        float: left;
     }
     .regLogo {
         width: 55px;
