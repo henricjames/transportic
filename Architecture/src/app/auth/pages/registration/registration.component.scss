@@ -14,6 +14,12 @@
         width: 55px;
         margin-bottom: 22px;
     }
+    .fa-times-thin:before {
+        content: '\00d7';
+        font-size: 32px;
+        font-weight: bold;
+        color: #666E7D;
+    }
     h1 {
         font-family: 'Rubik', sans-serif;
         font-weight: lighter;
