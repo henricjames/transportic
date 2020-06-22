@@ -1,10 +1,17 @@
 <div class="wrapper">
-    <h1>Registration</h1>
-    <div class="stepper">
-        <div class="stepDot block01" [ngClass]="{'current':infoStepper}"> </div>
-        <div class="stepDot block02" [ngClass]="{'current':accountStepper}"></div>
-        <div class="stepDot block03" [ngClass]="{'current':emailStepper}"></div>
+    <div class="row">
+        <div class="col-6">
+            <h1>Registration</h1>
+        </div>
+        <div class="col-6">
+            <div class="stepper">
+                <div class="stepDot block01" [ngClass]="{'current':infoStepper}"> </div>
+                <div class="stepDot block02" [ngClass]="{'current':accountStepper}"></div>
+                <div class="stepDot block03" [ngClass]="{'current':emailStepper}"></div>
+            </div>
+        </div>
     </div>
+
     <form [formGroup]="transporticFormInfo">
         <div class="wrapBox">
             <div class="regDiv info" [ngClass]="{'info':!isActiveInfo}">
@@ -15,21 +22,22 @@
                     <app-textfield labelname="Last Name" formControlName="lastname/*"></app-textfield>
                 </div>
                 <app-textfield labelname="Password " formControlName="password"></app-textfield>
-                <button type="submit" (click)="clickInfo()">Submit</button>
+                <button type="button" class="btn btn-primary btn-md btn-block" (click)="clickInfo()">Submit</button>
             </div>
 
             <div class="regDiv account" [class.active]="isActiveAccount">
                 <!-- <form [formGroup]="transporticFormAccount"> -->
                 <app-textfield labelname="Email" formControlName="name"></app-textfield>
                 <app-textfield labelname="Password" formControlName="email"></app-textfield>
-                <button type="submit" (click)="clickEmail()">Submit</button>
+                <button type="button" class="btn btn-primary btn-md btn-block" (click)="clickEmail()">Submit</button>
+
                 <!-- </form> -->
             </div>
 
             <div class="regDiv email" [class.active]="isActiveEmail">
                 <!-- <form [formGroup]="transporticFormEmail"> -->
                 <app-textfield labelname="Email" formControlName="name"></app-textfield>
-                <button type="submit" (click)="clickComplete()">Submit</button>
+                <button type="submit" class="btn btn-primary btn-md btn-block" (click)="clickComplete()">Submit</button>
                 <!-- </form> -->
             </div>
         </div>
