@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import "../../../../styles/main";
 .wrapper {
     width: 100%;
     max-width: 390px;
@@ -7,6 +8,9 @@
     margin-top: 50px;
     padding: 20px;
     border-radius: 10px;
+    .wrapBox {
+        padding-left: 18px;
+    }
     .fL {
         float: left;
     }
@@ -24,6 +28,7 @@
         font-family: 'Rubik', sans-serif;
         font-weight: lighter;
         color: #0A4FD8;
+        font-size: 36px;
         margin: 0 18px;
         float: left;
     }
@@ -94,5 +99,25 @@
     }
     .active {
         display: block;
+    }
+    .buttonInicia {
+        margin-top: 17px;
+        margin-bottom: 8px;
+        height: 48px;
+        width: 312px;
+        border-radius: 4px;
+        background-color: #0a4fd8;
+        margin-left: 9px;
+    }
+    .textInicia {
+        height: 17px;
+        width: 221.87px;
+        color: #ffffff;
+        font-family: $font-family-default;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 17px;
+        text-align: center;
     }
 }

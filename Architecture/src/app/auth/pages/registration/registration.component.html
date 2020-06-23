@@ -33,8 +33,10 @@
                 </div>
                 <app-textfield labelname="Password " formControlName="password "></app-textfield>
 
-                <button type="button" class="btn btn-primary btn-block" (click)="clickInfo()">                    
+                <button type="button" class="btn buttonInicia" (click)="clickInfo()">  
+                    <label class="textInicia">
                       Submit
+                    </label>
                 </button>
 
             </div>
@@ -43,8 +45,10 @@
                 <!-- <form [formGroup]="transporticFormAccount "> -->
                 <app-textfield labelname="Email " formControlName="name "></app-textfield>
                 <app-textfield labelname="Password " formControlName="email "></app-textfield>
-                <button type="button" class="btn btn-primary btn-block" (click)="clickEmail()">                    
+                <button type="button" class="btn buttonInicia" (click)="clickEmail()">  
+                    <label class="textInicia">
                       Submit
+                    </label>
                 </button>
                 <!-- </form> -->
             </div>
@@ -52,9 +56,11 @@
             <div class="regDiv email " [class.active]="isActiveEmail ">
                 <!-- <form [formGroup]="transporticFormEmail "> -->
                 <app-textfield labelname="Email " formControlName="name "></app-textfield>
-                <button type="button" class="btn btn-primary btn-block" (click)="clickComplete()">                    
-                    Submit
-              </button>
+                <button type="button" class="btn buttonInicia" (click)="clickComplete()">  
+                    <label class="textInicia">
+                      Submit
+                    </label>
+                </button>
                 <!-- </form> -->
 
 
