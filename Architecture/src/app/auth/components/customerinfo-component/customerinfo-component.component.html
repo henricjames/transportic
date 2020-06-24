@@ -1,8 +1,37 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-
 <p class="atencion-al-cliente"> {{"LOGIN.CUSTOMERSUPPORT" | translate }}</p>
 <p class="de-lunes-a-viernes-d">{{"LOGIN.CUSTOMERSUPPORTINFO" | translate }}</p>
 
+<ul class="contact-info">
+  <li class="contact-info__item">
+    <a href="">
+      <i class="fa fa-phone" id='text'></i>
+      <span>
+        {{"LOGIN.TELEPHONE" | translate }}:
+      </span>
+        {{phone}}
+    </a>
+  </li>
+  <li class="contact-info__item">
+    <a href="">
+      <i class="fa fa-envelope-o" id='text'></i>
+      <span>
+        {{"LOGIN.EMAIL" | translate }}:
+      </span>
+        {{email}}
+    </a>
+  </li>
+  <li class="contact-info__item">
+    <a href="">
+      <i class="fa fa-comment-o " id='text'></i>
+      <span>
+        {{"LOGIN.CHAT" | translate }}:
+      </span>
+        {{comment}}
+    </a>
+  </li>
+</ul>
+
+<!--
 <div class="divStyle">
   <div class="input-group-addon ">
     <a href="tel:{{phone}}" class="via-telefonica-34 text">
@@ -43,4 +72,4 @@
       {{comment}}
     </label>
   </div>
-</div>
+</div> -->
