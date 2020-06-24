@@ -26,10 +26,11 @@
     <form [formGroup]="transporticFormInfo ">
         <div class="wrapBox ">
             <div class="regDiv info " [ngClass]="{ 'info':!isActiveInfo} ">
-                <div formGroupName="fname">
-                    <app-textfield labelname="First Name "></app-textfield>
+                <div>
+                    <app-textfield labelname="First Name"></app-textfield>
+
                 </div>
-                <div formGroupName="lname">
+                <div>
                     <app-textfield labelname="Last Name"></app-textfield>
                 </div>
                 <app-textfield labelname="Password"></app-textfield>
@@ -40,7 +41,7 @@
 
             </div>
 
-            <div class="regDiv account " [class.active]="isActiveAccount ">
+            <div class="regDiv account" [class.active]="isActiveAccount ">
                 <!-- <form [formGroup]="transporticFormAccount "> -->
                 <app-textfield labelname="Email " formControlName="name"></app-textfield>
                 <app-textfield labelname="Password " formControlName="email"></app-textfield>

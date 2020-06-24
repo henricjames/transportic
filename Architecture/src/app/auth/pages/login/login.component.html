@@ -20,34 +20,22 @@
                 {{"LOGIN.PASSWORDREQUIRED" | translate }}
             </div>
         </div>
-        <a href ng-click>
-            <label class="has-olvidado-tu-con">
-        {{"LOGIN.FORGOTPASSWORD" | translate }}
-      </label>
+        <a href ng-click class="has-olvidado-tu-con">
+          {{"LOGIN.FORGOTPASSWORD" | translate }}
+      </a>
+        <div>
+            <button type="submit" class="btn buttonInicia w-100" [disabled]="!loginForm.valid">
+              {{"LOGIN.LOGIN" | translate }}
+          </button>
+        </div>
+        <a routerLink="/registration" class="w-100">
+            <button type="button" class="btn buttonBackground w-100">
+              {{"LOGIN.REGISTER" | translate }}
+          </button>
         </a>
-        <p>
-            <button type="submit" class="btn buttonInicia" [disabled]="!loginForm.valid">
-        <label class="textInicia">
-          {{"LOGIN.LOGIN" | translate }}
-        </label>
-      </button>
-        </p>
-        <p>
-            <a href="/login/registration">
-                <button type="button" class="btn buttonBackground">
-          <label class="textRegistrate">
-            {{"LOGIN.REGISTER" | translate }}
-          </label>
+        <button type="button" class="btn buttonBackground w-100">
+            {{"LOGIN.GUEST" | translate }}
         </button>
-            </a>
-        </p>
-        <p>
-            <button type="button" class="btn buttonBackground">
-        <label class="textAccede">
-          {{"LOGIN.GUEST" | translate }}
-        </label>
-      </button>
-        </p>
     </form>
     <app-customer-component></app-customer-component>
     <app-language-translator></app-language-translator>
@@ -57,7 +45,7 @@
         <a>{{"LOGIN.PRIVACYPOLICY" | translate }}</a>
     </ul>
     <label class="portic-barcel">
-    {{"LOGIN.RIGHTS" | translate }}
-  </label>
-    <app-cookies></app-cookies>
+      {{"LOGIN.RIGHTS" | translate }}
+    </label>
+    <!-- <app-cookies></app-cookies> -->
 </div>
