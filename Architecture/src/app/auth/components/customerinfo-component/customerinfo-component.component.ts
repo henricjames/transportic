@@ -6,15 +6,13 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./customerinfo-component.component.scss']
 })
 export class CustomerComponentComponent implements OnInit {
-  @Input() phone;
-  email;
-  comment;
+  @Input() phone = 9935036510;
+  @Input() email = 'atencioclient@portic.net';
+  @Input() comment = 'Iniciar conversación';
 
   constructor() {}
 
   ngOnInit(): void {
-    this.phone = 9935036510;
-    this.email = 'atencioclient@portic.net';
-    this.comment = 'Iniciar conversación';
+
   }
 }

@@ -8,24 +8,22 @@
   font-weight: 500;
   letter-spacing: 0;
   line-height: 16px;
-  margin-left: 24px;
+
 }
 
 .de-lunes-a-viernes-d {
-  height: 32px;
-  width: 292px;
   color: $color-black;
   font-family: $font-family-default;
   font-size: 12px;
   letter-spacing: 0;
   line-height: 16px;
-  margin-left: 24px;
+
 }
 
 .iconos-ic-call {
   height: 12px;
   width: 12px;
-  margin-left: 24px;
+  margin-right: $spacer * 1.5;
 }
 
 .iconos-ic-call-iconos-ic-email {
@@ -42,7 +40,7 @@
 
 .via-telefonica-34 {
   height: $font-size;
-  width: 187px;
+
   color: $color-dark-grey;
   font-family: $font-family-default;
   font-size: 12px;
@@ -52,7 +50,6 @@
 
 .via-email-atenciocl {
   height: $font-size;
-  width: 195px;
   color: $color-dark-grey;
   font-family: $font-family-default;
   font-size: 12px;
@@ -62,7 +59,6 @@
 
 .via-chat-iniciar-co {
   height: $font-size;
-  width: 165px;
   color: $color-dark-grey;
   font-family: $font-family-default;
   font-size: 12px;
@@ -77,4 +73,28 @@
 
 .divStyle {
   margin-top: 20px;
+}
+
+
+.contact-info{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  &__item{
+    margin-bottom: 5px;
+    a{
+      font-size: 12px;
+      i {
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        font-size: 16px;
+        color: get-color(primary);
+        margin-right: 13px;
+      }
+      span{
+        color: get-color(primary);
+      }
+    }
+  }
 }

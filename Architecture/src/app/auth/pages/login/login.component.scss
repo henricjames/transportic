@@ -1,7 +1,6 @@
 @import "../../../../styles/main";
 
 .btn-ss {
-  margin-left: $spacer-double * 2;
 }
 
 hr {
@@ -13,9 +12,7 @@ hr {
 }
 
 .login {
-  width: 400px;
-  margin: 16px auto;
-  font-size: 16px;
+
 }
 
 .login-header,
@@ -93,17 +90,14 @@ hr {
 
 .button-cta-secondary {
   height: 48px;
-  width: 312px;
 }
 
 .buttonInicia {
   margin-top: 17px;
   margin-bottom: 8px;
   height: 48px;
-  width: 312px;
   border-radius: 4px;
   background-color: #0a4fd8;
-  margin-left: 9px;
 }
 
 .buttonBackground {
@@ -114,12 +108,10 @@ hr {
   border: 1px solid #d3d9e5;
   border-radius: 4px;
   background-color: #ffffff;
-  margin-left: 9px;
 }
 
 .textInicia {
   height: 17px;
-  width: 221.87px;
   color: #ffffff;
   font-family: $font-family-default;
   font-size: 14px;
@@ -131,7 +123,6 @@ hr {
 
 .textRegistrate {
   height: 17px;
-  width: 213.87px;
   color: #0a4fd8;
   font-family: $font-family-default;
   font-size: 14px;
@@ -143,7 +134,6 @@ hr {
 
 .textAccede {
   height: 17px;
-  width: 253.22px;
   color: #0a4fd8;
   font-family: $font-family-default;
   font-size: 14px;
@@ -154,8 +144,6 @@ hr {
 }
 
 .has-olvidado-tu-con {
-  height: 14px;
-  width: 172px;
   color: #0a4fd8;
   font-family: $font-family-default;
   font-size: 12px;
@@ -163,7 +151,7 @@ hr {
   letter-spacing: 0;
   line-height: 14px;
   text-align: right;
-  margin-left: 158px;
+  display: block;
 }
 
 ul {
@@ -171,26 +159,22 @@ ul {
 
   a {
     height: 24px;
-    width: 312px;
     color: #0a4fd8;
     font-family: $font-family-default;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0;
     line-height: 24px;
-    margin-left: 24px;
   }
 }
 
 .portic-barcel {
   height: 16px;
-  width: 300px;
   color: #888888;
   font-family: $font-family-default;
   font-size: 12px;
   letter-spacing: -0.25px;
   line-height: 16px;
-  margin-left: 24px;
 }
 
 .transportic_logo {
