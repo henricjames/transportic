@@ -34,33 +34,27 @@
                 </div>
                 <app-textfield labelname="Password"></app-textfield>
 
-                <button type="button" class="btn buttonInicia w-100" (click)="clickInfo()">  
-                    <label class="textInicia">
+                <button type="button" class="btn buttonInicia w-100" (click)="clickInfo()">
                       Submit
-                    </label>
                 </button>
 
             </div>
 
             <div class="regDiv account " [class.active]="isActiveAccount ">
                 <!-- <form [formGroup]="transporticFormAccount "> -->
-                <app-textfield labelname="Email"></app-textfield>
-                <app-textfield labelname="Password "></app-textfield>
-                <button type="button" class="btn buttonInicia w-100" (click)="clickEmail()">  
-                    <label class="textInicia">
+                <app-textfield labelname="Email " formControlName="name"></app-textfield>
+                <app-textfield labelname="Password " formControlName="email"></app-textfield>
+                <button type="button" class="btn buttonInicia w-100" (click)="clickEmail()">
                       Submit
-                    </label>
                 </button>
                 <!-- </form> -->
             </div>
 
             <div class="regDiv email " [class.active]="isActiveEmail ">
                 <!-- <form [formGroup]="transporticFormEmail "> -->
-                <app-textfield labelname="Email"></app-textfield>
-                <button type="button" class="btn buttonInicia w-100" (click)="clickComplete()">  
-                    <label class="textInicia">
+                <app-textfield labelname="Email " formControlName="name"></app-textfield>
+                <button type="button" class="btn buttonInicia w-100" (click)="clickComplete()">
                       Submit
-                    </label>
                 </button>
                 <!-- </form> -->
 
