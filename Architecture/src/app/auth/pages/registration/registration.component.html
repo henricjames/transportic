@@ -2,7 +2,8 @@
     <div class="row">
         <div class="col-12">
             <a href="/login" class="href" class="iconClose">
-                <i class="fa fa-times fa-times-thin fa-2x close" height="14px" width="14px"></i></a>
+                <i class="fa fa-times fa-times-thin fa-2x close" height="14px" width="14px"></i>
+            </a>
         </div>
         <div class="col-12">
             <div class="transportic_logo">
@@ -29,11 +30,11 @@
                     <app-textfield labelname="First Name "></app-textfield>
                 </div>
                 <div formGroupName="lname">
-                    <app-textfield labelname="Last Name " formControlName="lastname/* "></app-textfield>
+                    <app-textfield labelname="Last Name"></app-textfield>
                 </div>
-                <app-textfield labelname="Password " formControlName="password "></app-textfield>
+                <app-textfield labelname="Password"></app-textfield>
 
-                <button type="button" class="btn buttonInicia" (click)="clickInfo()">  
+                <button type="button" class="btn buttonInicia w-100" (click)="clickInfo()">  
                     <label class="textInicia">
                       Submit
                     </label>
@@ -43,9 +44,9 @@
 
             <div class="regDiv account " [class.active]="isActiveAccount ">
                 <!-- <form [formGroup]="transporticFormAccount "> -->
-                <app-textfield labelname="Email " formControlName="name "></app-textfield>
-                <app-textfield labelname="Password " formControlName="email "></app-textfield>
-                <button type="button" class="btn buttonInicia" (click)="clickEmail()">  
+                <app-textfield labelname="Email"></app-textfield>
+                <app-textfield labelname="Password "></app-textfield>
+                <button type="button" class="btn buttonInicia w-100" (click)="clickEmail()">  
                     <label class="textInicia">
                       Submit
                     </label>
@@ -55,8 +56,8 @@
 
             <div class="regDiv email " [class.active]="isActiveEmail ">
                 <!-- <form [formGroup]="transporticFormEmail "> -->
-                <app-textfield labelname="Email " formControlName="name "></app-textfield>
-                <button type="button" class="btn buttonInicia" (click)="clickComplete()">  
+                <app-textfield labelname="Email"></app-textfield>
+                <button type="button" class="btn buttonInicia w-100" (click)="clickComplete()">  
                     <label class="textInicia">
                       Submit
                     </label>
