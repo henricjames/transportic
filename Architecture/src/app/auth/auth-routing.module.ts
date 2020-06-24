@@ -6,8 +6,13 @@ import { RegistrationComponent } from './pages/registration/registration.compone
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'registration', component: RegistrationComponent },
-  { path: '', redirectTo:'login', pathMatch: 'full' }
-];
+  { path: '', component: LoginComponent }
+]
+RouterModule.forRoot(
+  [
+    { path: "", component: LoginComponent}
+  ]
+)
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
