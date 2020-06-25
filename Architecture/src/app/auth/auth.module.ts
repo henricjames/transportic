@@ -8,6 +8,7 @@ import { RegistrationComponent } from './pages/registration/registration.compone
 import { CustomerComponentComponent } from './components/customerinfo-component/customerinfo-component.component';
 import { CookiesComponent } from './pages/cookies/cookies.component';
 import { LanguageTranslatorComponent } from './components/language-translator/language-translator.component';
+import { SummaryComponent } from './pages/summary/summary.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LanguageTranslatorComponent } from './components/language-translator/la
     RegistrationComponent,
     CustomerComponentComponent,
     CookiesComponent,
-    LanguageTranslatorComponent
+    LanguageTranslatorComponent,
+    SummaryComponent
   ],
   imports: [
     CommonModule,
