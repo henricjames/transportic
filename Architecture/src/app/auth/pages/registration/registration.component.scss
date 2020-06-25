@@ -24,14 +24,13 @@
         font-weight: lighter;
         color: #0A4FD8;
         font-size: 36px;
-        margin: 0 18px;
+        // margin: 0 18px;
         float: left;
     }
     .iconClose {
         width: 35px;
         height: 35px;
         float: left;
-        margin: 0 18px;
     }
     .logo {
         width: 55px;
@@ -74,15 +73,40 @@
     }
     .account {
         display: none;
+        .checkboxWrap {
+            width: 100%;
+            input {
+                width: auto;
+                display: inline-block;
+                margin-right: 5px;
+            }
+        }
     }
     .info {
         display: none;
     }
     .email {
         display: none;
+        .grey {
+            color: #ccc;
+            a {
+                text-decoration: underline;
+                color: #ccc;
+            }
+        }
     }
     .active {
         display: block;
+    }
+    .buttonBackground {
+        margin-top: 20px;
+        box-sizing: border-box;
+        height: 48px;
+        width: 312px;
+        border: 1px solid #d3d9e5;
+        border-radius: 4px;
+        background-color: #ffffff;
+        color: #0A4FD8;
     }
     .buttonInicia {
         margin-top: 17px;
@@ -92,7 +116,6 @@
         border-radius: 4px;
         background-color: #0a4fd8;
         color: #ffffff;
-        margin-left: 9px;
     }
     .textInicia {
         height: 17px;
