@@ -1,0 +1,21 @@
+@import "../../../styles/main";
+
+.header {
+  &__title {
+    height: 36px;
+    color: get-color(primary);
+    font-family: $font-family-default;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -0.09px;
+    line-height: 36px;
+  }
+
+  &__label {
+    color: #799fe9;
+    font-family: $font-family-default;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    line-height: 19px;
+  }
+}

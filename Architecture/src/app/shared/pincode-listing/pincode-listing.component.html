@@ -1,0 +1,17 @@
+<div class="pincode" *ngFor="let pincode of pincodes">
+  <div class="row">
+    <div class="col-3 pincode__{{ pincode.type }}"></div>
+    <div class="col-6 pincode__content">
+      <label class="pincode__title">{{ pincode.title }}</label>
+      <ul>
+        <li>{{ "PINCODE.TERMINAL" | translate }}: {{ pincode.terminal }}</li>
+        <li>{{ "PINCODE.DATE" | translate }}: {{ pincode.date }}</li>
+        <li>{{ "PINCODE.CONTAINER" | translate }}: {{ pincode.container }}</li>
+        <li>{{ pincode.status }}</li>
+      </ul>
+    </div>
+    <div class="pincode__icon">
+      <img src="assets/images/ic_pincode.png" />
+    </div>
+  </div>
+</div>

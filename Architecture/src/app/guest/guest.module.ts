@@ -5,16 +5,17 @@ import { GuestRoutingModule } from './guest-routing.module';
 import { PincodeListComponent } from './pages/pincode-list/pincode-list.component';
 import { PincodeDetailComponent } from './pages/pincode-detail/pincode-detail.component';
 import { PincodeAddComponent } from './pages/pincode-add/pincode-add.component';
-
+import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
-  declarations: [PincodeListComponent, PincodeDetailComponent, PincodeAddComponent],
-  imports: [
-    CommonModule,
-    GuestRoutingModule
+  declarations: [
+    PincodeListComponent,
+    PincodeDetailComponent,
+    PincodeAddComponent,
+    NavigationBarComponent
   ],
-  exports: [
-
-  ]
+  imports: [CommonModule, GuestRoutingModule, SharedModule],
+  exports: []
 })
-export class GuestModule { }
+export class GuestModule {}

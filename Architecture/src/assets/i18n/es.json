@@ -29,7 +29,9 @@
   "GUEST": {
     "PINCODE": "PIN CODE",
     "NOTICES": "Avisos",
-    "CONTACTS": "Contacto"
+    "CONTACTS": "Contacto",
+    "ORDERS": "Ordenes",
+    "PROFILE": "Mi Profil"
   },
   "REGISTER": {
     "NAME": "NOMBRE",
@@ -38,5 +40,12 @@
     "PHONE": "TELÉFONO MÓVIL",
     "EMAIL": "EMAIL",
     "GMAIL": "EMAIL GMAIL"
+  },
+  "PINCODE": {
+    "TITLE": "PINCODES",
+    "LABEL": "preavisos",
+    "TERMINAL": "TERMINAL",
+    "DATE": "FECHA PREVISTA",
+    "CONTAINER": "CONTENEDOR"
   }
 }

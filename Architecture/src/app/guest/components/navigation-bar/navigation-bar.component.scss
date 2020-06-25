@@ -1,0 +1,24 @@
+@import "../../../../styles/main";
+
+.rectangle {
+  height: 56px;
+  background-color: $color-primary;
+  margin-top: 584px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-top: $spacer;
+  display: flex;
+}
+
+li {
+  span {
+    color: $color-white;
+    font-family: $font-family-default;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    line-height: 12px;
+  }
+}
