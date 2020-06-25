@@ -1,6 +1,6 @@
 @import "../../../../styles/main";
 
-.atencion-al-cliente {
+.customer_support {
   height: 16px;
   color: $color-blue;
   font-family: $font-family-default;
@@ -11,7 +11,7 @@
 
 }
 
-.de-lunes-a-viernes-d {
+.customer_info {
   color: $color-black;
   font-family: $font-family-default;
   font-size: 12px;
@@ -20,70 +20,17 @@
 
 }
 
-.iconos-ic-call {
-  height: 12px;
-  width: 12px;
-  margin-right: $spacer * 1.5;
-}
-
-.iconos-ic-call-iconos-ic-email {
-  height: 17px;
-  width: 17px;
-  margin-left: 24px;
-}
-
-.iconos-ic-call-iconos-ic-chat {
-  height: 16px;
-  width: 16px;
-  margin-left: 24px;
-}
-
-.via-telefonica-34 {
-  height: $font-size;
-
-  color: $color-dark-grey;
-  font-family: $font-family-default;
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: $font-size;
-}
-
-.via-email-atenciocl {
-  height: $font-size;
-  color: $color-dark-grey;
-  font-family: $font-family-default;
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: $font-size;
-}
-
-.via-chat-iniciar-co {
-  height: $font-size;
-  color: $color-dark-grey;
-  font-family: $font-family-default;
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: $font-size;
-}
-
-.text {
-  text-decoration: none !important;
-  color: $color-primary;
-}
-
-.divStyle {
-  margin-top: 20px;
-}
-
-
-.contact-info{
+.contact-info {
   list-style: none;
   margin: 0;
   padding: 0;
-  &__item{
+
+  &__item {
     margin-bottom: 5px;
-    a{
+
+    a {
       font-size: 12px;
+
       i {
         width: 16px;
         height: 16px;
@@ -92,7 +39,8 @@
         color: get-color(primary);
         margin-right: 13px;
       }
-      span{
+
+      span {
         color: get-color(primary);
       }
     }

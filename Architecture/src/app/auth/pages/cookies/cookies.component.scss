@@ -1,17 +1,19 @@
 @import "../../../../styles/main";
 
-.surface {
+.cookies {
   height: 96px;
-  width: 360px;
   background-color: $color-primary;
   color: $color-white;
 }
-.text {
-  height: 64px;
-  width: 273px;
+
+.cookies_text {
   color: $color-white;
   font-family: $font-family-default;
   font-size: 12px;
   letter-spacing: 0;
   line-height: 16px;
+}
+
+.close {
+  color: $color-white;
 }
