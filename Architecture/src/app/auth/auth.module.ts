@@ -9,6 +9,7 @@ import { CustomerComponentComponent } from './components/customerinfo-component/
 import { CookiesComponent } from './pages/cookies/cookies.component';
 import { LanguageTranslatorComponent } from './components/language-translator/language-translator.component';
 import { SummaryComponent } from './pages/summary/summary.component';
+import { ForgotpasswordComponent } from './pages/forgotpassword/forgotpassword.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SummaryComponent } from './pages/summary/summary.component';
     CustomerComponentComponent,
     CookiesComponent,
     LanguageTranslatorComponent,
-    SummaryComponent
+    SummaryComponent,
+    ForgotpasswordComponent
   ],
   imports: [
     CommonModule,
