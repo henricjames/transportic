@@ -20,7 +20,7 @@ const routes: Routes = [
   path: 'guest', loadChildren: () =>
     import('./guest/guest.module').then(m => m.GuestModule)
 },
-
+{ path: 'summary', redirectTo: 'summary', pathMatch: 'full' },
 { path: '', redirectTo: 'login', pathMatch: 'full' }
 ];
 @NgModule({
