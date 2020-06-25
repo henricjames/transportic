@@ -1,15 +1,12 @@
-$colors: (
-  primary: #0a4fd8,
+$colors: (primary: #0a4fd8,
   seconday: #fff,
   black: #000c26,
   light-grey: #d3d9e5,
   blue: #062c76,
   dark-grey: #888888,
   white: #ffffff,
-  navbar: (
-    primary: #fff
-  )
-);
+  grey: #666E7D,
+  navbar: (primary: #fff));
 
 $color-primary: map-get($colors, primary);
 $color-black: map-get($colors, black);
@@ -19,9 +16,5 @@ $color-blue: map-get($colors, blue);
 $color-white: map-get($colors, white);
 
 @function get-color($key) {
- @return map-get($colors, $key);
-}
-
-@each $var in $colors {
-
+  @return map-get($colors, $key);
 }
