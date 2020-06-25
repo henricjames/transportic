@@ -1,0 +1,42 @@
+{
+  "LOGIN": {
+    "USERNAME": "USER / EMAIL",
+    "PASSWORD": "PASSWORD",
+    "EMAILREQUIRED": "email is required",
+    "INVALIDEMAIL": "Invalid email address",
+    "PASSWORDREQUIRED": "Password is required",
+    "FORGOTPASSWORD": "have you forgotten your password?",
+    "LOGIN": "LOG IN",
+    "REGISTER": "SIGN UP",
+    "GUEST": "ACCESS AS A GUEST",
+    "CUSTOMERSUPPORT": "CUSTOMER SUPPORT:",
+    "CUSTOMERSUPPORTINFO": "Monday to Friday from 6:00 a.m. to 8:00 p.m. Saturdays from 9:00 a.m. to 2:00 p.m., through the following channels:",
+    "TELEPHONE": "Via telephone :",
+    "EMAIL": "Vía email:",
+    "CHAT": "Vía chat:",
+    "LANGUAGE": "LANGUAGE:",
+    "ESP": "ESP",
+    "CAT": "CAT",
+    "ENG": "ENG",
+    "FRA": "FRA",
+    "HELP": "Help",
+    "TERMS": "Terms of Service.",
+    "PRIVACYPOLICY": "Privacy Policy",
+    "RIGHTS": " © 2020 Portic Barcelona. All rights reserved",
+    "COOKIESPOLICY": "Cookies policy",
+    "COOKIES": "Portic uses its own and third-party cookies to improve its services and prepare statistical information. For more information access our"
+  },
+  "GUEST": {
+    "PINCODE": "PIN CODE",
+    "NOTICES": "Notices",
+    "CONTACTS": "Contacts"
+  },
+  "REGISTER": {
+    "NAME": "NAME",
+    "SURNAMES": "SURNAMES",
+    "NIF": "NIF",
+    "PHONE": "MOBILE PHONE",
+    "EMAIL": "EMAIL",
+    "GMAIL": "EMAIL GMAIL"
+  }
+}

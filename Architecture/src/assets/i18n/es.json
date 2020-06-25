@@ -25,5 +25,18 @@
     "RIGHTS": " © 2020 Portic Barcelona. Todos los derechos reservados",
     "COOKIESPOLICY": " Política de cookies",
     "COOKIES": "Portic utiliza cookies propias y de terceros para mejorar sus servicios y elaborar información estadístic. Para obtener más información accede a nuestra"
+  },
+  "GUEST": {
+    "PINCODE": "PIN CODE",
+    "NOTICES": "Avisos",
+    "CONTACTS": "Contacto"
+  },
+  "REGISTER": {
+    "NAME": "NOMBRE",
+    "SURNAMES": "APELLIDOS",
+    "NIF": "NIF",
+    "PHONE": "TELÉFONO MÓVIL",
+    "EMAIL": "EMAIL",
+    "GMAIL": "EMAIL GMAIL"
   }
 }

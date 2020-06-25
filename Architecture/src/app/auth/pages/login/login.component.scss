@@ -1,150 +1,27 @@
 @import "../../../../styles/main";
 
-.btn-ss {
-}
-
-hr {
-  margin-bottom: 20px;
-}
-
-.wrapper {
-  padding: 20px;
-}
-
-.login {
-
-}
-
-.login-header,
-.login p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.login-triangle {
-  width: 0;
-  margin-right: auto;
-  margin-left: auto;
-  border: 12px solid transparent;
-  border-bottom-color: rgb(15, 66, 107);
-}
-
-.login-header {
-  background: rgb(12, 77, 129);
-  padding: 20px;
-  font-size: 1.4em;
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-.login-container {
-  background: #ebebeb;
-  padding: 0px 12px;
-}
-
-.login p {
-  padding: 0px 12px;
-}
-
-.login input {
-  box-sizing: border-box;
-  display: block;
-  width: 100%;
-  border-width: 1px;
-  border-style: solid;
-  padding: 16px;
-  outline: 0;
-  font-family: inherit;
-  font-size: 0.95em;
-}
-
-
-.login input[type="email"],
-.login input[type="password"] {
-  background: #fff;
-  border-color: #bbb;
-  color: #555;
-}
-
-.login input[type="email"]:focus,
-.login input[type="password"]:focus {
-  border-color: #888;
-}
-
-.login input[type="submit"] {
-  background: rgb(1, 29, 51);
-  border-color: transparent;
-  color: #fff;
-  cursor: pointer;
-}
-
-.login input[type="submit"]:hover {
-  background: #17c;
-}
-
-.login input[type="submit"]:focus {
-  border-color: #05a;
-}
-
-.button-cta-secondary {
-  height: 48px;
-}
-
-.buttonInicia {
+.btn_login {
   margin-top: 17px;
   margin-bottom: 8px;
   height: 48px;
   border-radius: 4px;
-  background-color: #0a4fd8;
+  background-color: get-color(primary);
+  color: get-color(white);
 }
 
-.buttonBackground {
+.btn_register {
   margin-bottom: 20px;
   box-sizing: border-box;
   height: 48px;
   width: 312px;
-  border: 1px solid #d3d9e5;
+  border: 1px solid get-color(light-grey);
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: get-color(white);
+  color: get-color(primary);
 }
 
-.textInicia {
-  height: 17px;
-  color: #ffffff;
-  font-family: $font-family-default;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 17px;
-  text-align: center;
-}
-
-.textRegistrate {
-  height: 17px;
-  color: #0a4fd8;
-  font-family: $font-family-default;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 17px;
-  text-align: center;
-}
-
-.textAccede {
-  height: 17px;
-  color: #0a4fd8;
-  font-family: $font-family-default;
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0;
-  line-height: 17px;
-  text-align: center;
-}
-
-.has-olvidado-tu-con {
-  color: #0a4fd8;
+.forgot_password {
+  color: get-color(primary);
   font-family: $font-family-default;
   font-size: 12px;
   font-weight: 500;
@@ -159,7 +36,7 @@ ul {
 
   a {
     height: 24px;
-    color: #0a4fd8;
+    color: get-color(primary);
     font-family: $font-family-default;
     font-size: 12px;
     font-weight: 500;
@@ -168,9 +45,9 @@ ul {
   }
 }
 
-.portic-barcel {
+.portic_rights {
   height: 16px;
-  color: #888888;
+  color: get-color(dark-grey);
   font-family: $font-family-default;
   font-size: 12px;
   letter-spacing: -0.25px;
@@ -180,5 +57,4 @@ ul {
 .transportic_logo {
   width: 55px;
   margin-bottom: 22px;
-
 }

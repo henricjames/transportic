@@ -1,66 +1,77 @@
 <div class="wrapper">
-    <div class="row">
-        <div class="col-12">
-            <a href="/login" class="href" class="iconClose">
-                <i class="fa fa-times fa-times-thin fa-2x close" height="14px" width="14px"></i>
-            </a>
-        </div>
-        <div class="col-12">
-            <div class="transportic_logo">
-                <img src="assets/transportic.png">
-            </div>
-
-        </div>
-        <div class="col-6">
-            <!-- <img src="../../../../assets/images/transportic.png" class="logo" width="55px" height="22px" alt=""> -->
-            <h1 class="fL">Registration</h1>
-        </div>
-        <div class=" col-6 ">
-            <div class="stepper">
-                <div class="stepDot block01 " [ngClass]="{ 'current':infoStepper} "> </div>
-                <div class="stepDot block02 " [ngClass]="{ 'current':accountStepper} "></div>
-                <div class="stepDot block03 " [ngClass]="{ 'current':emailStepper} "></div>
-            </div>
-        </div>
+  <div class="row">
+    <div class="col-12">
+      <a routerLink="/login" class="href" class="iconClose">
+        <i class="fa fa-times fa-times-thin fa-2x close" height="14px" width="14px"></i>
+      </a>
     </div>
-    <form [formGroup]="transporticFormInfo ">
-        <div class="wrapBox ">
-            <div class="regDiv info " [ngClass]="{ 'info':!isActiveInfo} ">
-                <div>
-                    <app-textfield labelname="First Name"></app-textfield>
+    <div class="col-12">
+      <div class="transportic_logo">
+        <img src="assets/transportic.png">
+      </div>
 
-                </div>
-                <div>
-                    <app-textfield labelname="Last Name"></app-textfield>
-                </div>
-                <app-textfield labelname="Password"></app-textfield>
+    </div>
+    <div class="col-6">
+      <!-- <img src="../../../../assets/images/transportic.png" class="logo" width="55px" height="22px" alt=""> -->
+      <h1 class="fL">Registration</h1>
+    </div>
+    <div class=" col-6 ">
+      <div class="stepper">
+        <div class="stepDot block01 " [ngClass]="{ 'current':infoStepper} "> </div>
+        <div class="stepDot block02 " [ngClass]="{ 'current':accountStepper} "></div>
+        <div class="stepDot block03 " [ngClass]="{ 'current':emailStepper} "></div>
+      </div>
+    </div>
+  </div>
+  <form [formGroup]="transporticFormInfo ">
+    <div class="wrapBox ">
+      <div class="regDiv info " [ngClass]="{ 'info':!isActiveInfo} ">
+        <div>
+          <app-textfield labelname="{{'REGISTER.NAME' | translate }}"></app-textfield>
 
-                <button type="button" class="btn buttonInicia w-100" (click)="clickInfo()">
-                      Submit
-                </button>
-
-            </div>
-
-            <div class="regDiv account" [class.active]="isActiveAccount ">
-                <!-- <form [formGroup]="transporticFormAccount "> -->
-                <app-textfield labelname="Email " formControlName="name"></app-textfield>
-                <app-textfield labelname="Password " formControlName="email"></app-textfield>
-                <button type="button" class="btn buttonInicia w-100" (click)="clickEmail()">
-                      Submit
-                </button>
-                <!-- </form> -->
-            </div>
-
-            <div class="regDiv email " [class.active]="isActiveEmail ">
-                <!-- <form [formGroup]="transporticFormEmail "> -->
-                <app-textfield labelname="Email " formControlName="name"></app-textfield>
-                <button type="button" class="btn buttonInicia w-100" (click)="clickComplete()">
-                      Submit
-                </button>
-                <!-- </form> -->
-
-
-            </div>
         </div>
-    </form>
+        <div>
+          <app-textfield labelname="{{'REGISTER.SURNAMES' | translate }}"></app-textfield>
+        </div>
+        <div>
+          <app-textfield labelname="{{'REGISTER.NIF' | translate }}"></app-textfield>
+        </div>
+        <div>
+          <app-textfield labelname="{{'REGISTER.PHONE' | translate }}"></app-textfield>
+
+        </div>
+        <div>
+          <app-textfield labelname="{{'REGISTER.EMAIL' | translate }}"></app-textfield>
+        </div>
+
+        <button type="button" class="btn button_submit w-100" (click)="clickInfo()">
+          Submit
+        </button>
+
+      </div>
+
+      <div class="regDiv account" [class.active]="isActiveAccount ">
+        <!-- <form [formGroup]="transporticFormAccount "> -->
+        <app-textfield labelname="{{'LOGIN.EMAIL' | translate }}" formControlName="name"></app-textfield>
+        <app-textfield formControlName="password" placeholder="Password" labelname="{{'LOGIN.PASSWORD' | translate }}"
+          type="password" showPasswordIcon=True>
+        </app-textfield>
+        <button type="button" class="btn button_submit w-100" (click)="clickEmail()">
+          Submit
+        </button>
+        <!-- </form> -->
+      </div>
+
+      <div class="regDiv email " [class.active]="isActiveEmail ">
+        <!-- <form [formGroup]="transporticFormEmail "> -->
+        <app-textfield labelname="{{'REGISTER.GMAIL' | translate }}" formControlName="name"></app-textfield>
+        <button type="button" class="btn button_submit w-100" (click)="clickComplete()">
+          Submit
+        </button>
+        <!-- </form> -->
+
+
+      </div>
+    </div>
+  </form>
 </div>
