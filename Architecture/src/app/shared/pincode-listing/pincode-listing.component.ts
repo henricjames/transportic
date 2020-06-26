@@ -14,7 +14,7 @@ export class PincodeListingComponent implements OnInit {
       date: '00/00/2020 · 15:00',
       container: 'ZIMU1234567 - 22G0',
       status: 'RECOGIDA/ENTREGA LLENO/VACÍO',
-      type: 'green',
+      type: 'success',
     },
     {
       title: 'PIN CODE Y44C10',
@@ -22,7 +22,7 @@ export class PincodeListingComponent implements OnInit {
       date: '00/00/2020 · 15:00',
       container: 'ZIMU1234567 - 22G0000',
       status: 'RECOGIDA/ENTREGA LLENO/VACÍOOO',
-      type: 'yellow',
+      type: 'info',
     },
   ];
   constructor() {}

@@ -1,46 +1,42 @@
-<div class="rectangle container">
-  <div class="row">
-    <ul>
-      <li>
-        <a routerLink="">
-          <img src="assets/images/pincode.png" />
-          <span>
-            {{ "GUEST.PINCODE" | translate }}
-          </span>
-        </a>
-      </li>
-      <li>
-        <a routerLink="">
-          <img src="assets/images/orders.png" />
-          <span>
-            {{ "GUEST.ORDERS" | translate }}
-          </span>
-        </a>
-      </li>
-      <li>
-        <a routerLink="">
-          <img src="assets/images/bell.png" />
-          <span>
-            {{ "GUEST.NOTICES" | translate }}
-          </span>
-        </a>
-      </li>
-      <li>
-        <a routerLink="">
-          <img src="assets/images/profile.png" />
-          <span>
-            {{ "GUEST.PROFILE" | translate }}
-          </span>
-        </a>
-      </li>
-      <li>
-        <a routerLink="">
-          <img src="assets/images/contact.png" />
-          <span>
-            {{ "GUEST.CONTACTS" | translate }}
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
+<ul class="navbar p-2">
+  <li class="navbar__item">
+    <a routerLink="">
+      <img src="assets/images/pincode.png" alt="pincode" />
+      <div class="navbar__text">
+        {{ "GUEST.PINCODE" | translate }}
+      </div>
+    </a>
+  </li>
+  <li class="navbar__item">
+    <a routerLink="">
+      <img src="assets/images/orders.png" alt="orders" />
+      <div class="navbar__text">
+        {{ "GUEST.ORDERS" | translate }}
+      </div>
+    </a>
+  </li>
+  <li class="navbar__item">
+    <a routerLink="">
+      <img src="assets/images/bell.png" alt="notifications" />
+      <div class="navbar__text">
+        {{ "GUEST.NOTICES" | translate }}
+      </div>
+    </a>
+  </li>
+  <li class="navbar__item">
+    <a routerLink="">
+      <img src="assets/images/profile.png" alt="profile" />
+      <div class="navbar__text">
+        {{ "GUEST.PROFILE" | translate }}
+      </div>
+    </a>
+  </li>
+  <li class="navbar__item">
+    <a routerLink="">
+      <img src="assets/images/contact.png" alt="contact" />
+      <div class="navbar__text">
+        {{ "GUEST.CONTACTS" | translate }}
+      </div>
+    </a>
+  </li>
+</ul>

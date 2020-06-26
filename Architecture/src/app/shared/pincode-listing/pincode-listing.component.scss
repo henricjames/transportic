@@ -2,22 +2,33 @@
 
 .pincode {
   box-sizing: border-box;
-  height: 112px;
+  min-height: 112px;
   border: 1px solid get-color(light-grey);
   border-radius: 4px;
   background-color: get-color(white);
   margin-bottom: 12px;
-  &__type {
-    height: 110px;
-    border-radius: 3px 0 0 3px;
-    background-color: get-color(green);
+  border-left-width: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  &_success {
+    border-left-color: get-color(green);
   }
+
+  &_info {
+    border-left-color: get-color(blue);
+  }
+
   &__content {
     padding-top: 10px;
+    padding-left: 10px;
   }
+
   &__icon {
-    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
   }
+
   &__title {
     color: get-color(primary);
     font-family: $font-family-default;
@@ -27,8 +38,10 @@
     line-height: 19px;
   }
 }
+
 ul {
   list-style: none;
+
   li {
     color: get-color(black);
     font-family: "Source Code Pro";
