@@ -1,14 +1,8 @@
 @import "../../../../styles/main";
 
-.iconClose {
-  width: 35px;
-  height: 35px;
-  float: left;
-}
 .transportic_logo {
-  margin-top: 54px;
+  margin-top: 140px;
 }
-
 .forgot_password_heading {
   color: $color-primary;
   font-family: Rubik;
@@ -18,20 +12,17 @@
   line-height: 36px;
 }
 
-.forgot_password_instruction {
-  font-family: Rubik;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 20px;
+.mail_sent_message {
+  margin-top: 11px;
 }
 
-.btn-send-mail {
+.btn-accept {
   height: 48px;
   background-color: $color-primary;
-  //position:absolute;
-  bottom: 16px;
   width: 100%;
+  margin-top: 23px;
 }
+
 .button_text {
   color: $color-white;
   font-family: Rubik;
@@ -40,7 +31,4 @@
   letter-spacing: 0;
   line-height: 17px;
   text-align: center;
-}
-.button {
-  width: 100%;
 }

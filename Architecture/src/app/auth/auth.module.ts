@@ -10,6 +10,7 @@ import { CookiesComponent } from './pages/cookies/cookies.component';
 import { LanguageTranslatorComponent } from './components/language-translator/language-translator.component';
 import { SummaryComponent } from './pages/summary/summary.component';
 import { ForgotpasswordComponent } from './pages/forgotpassword/forgotpassword.component';
+import { MailsentComponent } from './pages/mailsent/mailsent.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ForgotpasswordComponent } from './pages/forgotpassword/forgotpassword.c
     CookiesComponent,
     LanguageTranslatorComponent,
     SummaryComponent,
-    ForgotpasswordComponent
+    ForgotpasswordComponent,
+    MailsentComponent
   ],
   imports: [
     CommonModule,
