@@ -29,7 +29,9 @@
   "GUEST": {
     "PINCODE": "PIN CODE",
     "NOTICES": "Avisos",
-    "CONTACTS": "Contacto"
+    "CONTACTS": "Contacto",
+    "PINCODE-HEAD":"Consulta un PINCODE",
+    "VEHICLEREGISTRATION":"Matricula del vehiculo"
   },
   "REGISTER": {
     "NAME": "NOMBRE",
