@@ -9,6 +9,8 @@ $colors: (
   grey: #666e7d,
   green: #5ec800,
   light-blue: #799fe9,
+  yellow:#D7C755,
+  light-yellow:#FCF9E5,
 );
 
 $color-primary: map-get($colors, primary);
@@ -17,6 +19,8 @@ $color-light-grey: map-get($colors, light-grey);
 $color-dark-grey: map-get($colors, dark-grey);
 $color-blue: map-get($colors, blue);
 $color-white: map-get($colors, white);
+$color-yellow: map-get($colors,yellow);
+$color-light-yellow: map-get($colors,light-yellow);
 
 @function get-color($key) {
   @return map-get($colors, $key);

@@ -7,7 +7,7 @@
       </div>
     </a>
   </li>
-  <li class="navbar__item">
+  <li *ngIf=!guest class="navbar__item">
     <a routerLink="">
       <img src="assets/images/orders.png" alt="orders" />
       <div class="navbar__text">
@@ -23,7 +23,7 @@
       </div>
     </a>
   </li>
-  <li class="navbar__item">
+  <li *ngIf=!guest class="navbar__item">
     <a routerLink="">
       <img src="assets/images/profile.png" alt="profile" />
       <div class="navbar__text">
