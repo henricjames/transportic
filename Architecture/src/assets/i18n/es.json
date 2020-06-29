@@ -39,7 +39,19 @@
     "NIF": "NIF",
     "PHONE": "TELÉFONO MÓVIL",
     "EMAIL": "EMAIL",
-    "GMAIL": "EMAIL GMAIL"
+    "GMAIL": "EMAIL GMAIL",
+    "SUBMIT": "SIGUIENTE",
+    "SIGNUP": "Regístrate",
+    "SKIP": "SALTAR",
+    "TERMS": "He leído y acepto los siguientes Términos de Servicio y Política de privacidad",
+    "OKGOOGLE": "Añade el correo electrónico de Gmail y controla la aplicación Transportic por voz de OK Google.",
+    "PRIVACY": "Insertando el correo aceptas los",
+    "TERMSANDCONDITIONS": "términos y condiciones",
+    "SERVICE": "del servicio de Google Inc.",
+    "REGISTRY": "Registro",
+    "NOTIFICATION": "Hemos enviado un correo de validación a la siguiente dirección",
+    "SUMMARY": "Ahora ya puede solicitar operar con una empresa de transporte desde su perfil de usuario.",
+    "ACCEPT": "ACEPTAR"
   },
   "PINCODE": {
     "TITLE": "PINCODES",

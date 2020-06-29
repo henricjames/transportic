@@ -1,62 +1,73 @@
 <div class="wrapper">
-    <div class="row">
-        <div class="col-12">
-            <a href="/login" class="href" class="iconClose">
-                <i class="fa fa-times fa-times-thin fa-2x close" height="14px" width="14px"></i>
-            </a>
-        </div>
-        <div class="col-12">
-            <div class="transportic_logo">
-                <img src="./../../../../assets/images/rsz_transportic.png">
-            </div>
-
-        </div>
-        <div class="col-6">
-            <h1 class="fL">Registration</h1>
-        </div>
+  <div class="row">
+    <div class="col-12">
+      <a routerLink="/login" class="href" class="iconClose">
+        <i class="fa fa-times fa-times-thin fa-2x close" height="14px" width="14px"></i>
+      </a>
     </div>
-    <form [formGroup]="transporticFormInfo ">
-        <div class="row">
-            <div class="col-12">
-                <div class="wrapBox ">
-                    <div class="regDiv info " [ngClass]="{ 'info':!isActiveInfo} ">
-                        <div>
-                            <app-textfield labelname="First Name"></app-textfield>
-                        </div>
-                        <div>
-                            <app-textfield labelname="Last Name"></app-textfield>
-                        </div>
-                        <app-textfield labelname="Password"></app-textfield>
+    <div class="col-12">
+      <div class="transportic_logo">
+        <img src="./../../../../assets/images/rsz_transportic.png">
+      </div>
 
-                        <button type="button" class="btn buttonInicia w-100" (click)="clickInfo()">
-                      Submit
-                </button>
-                    </div>
-                    <div class="regDiv account" [class.active]="isActiveAccount ">
-                        <app-textfield labelname="Email " formControlName="name"></app-textfield>
-                        <app-textfield labelname="Password " formControlName="email"></app-textfield>
-                        <div class="checkboxWrap">
-                            <input type="checkbox" id="ControlCheck" name="ControlCheck" value="Bike">
-                            <label for="ControlCheck">He leído y acepto los siguientes Términos de Servicio y Política de privacidad</label>
-                        </div>
-                        <button type="button" class="btn buttonInicia w-100" (click)="clickEmail()">
-                      Submit
-                </button>
-                    </div>
-                    <div class="regDiv email " [class.active]="isActiveEmail ">
-                        <label>Añade el correo electrónico de Gmail y controla la aplicación Transportic por voz de OK Google.</label>
-                        <app-textfield labelname="Email"></app-textfield>
-                        <label class="grey">Insertando el correo aceptas los <a href="#">términos y condiciones</a> del servicio de Google Inc.</label>
-                        <button type="button" class="btn buttonBackground w-100">
-                           SALTAR
-                        </button>
-                        <a href="/summary" class="href">
-                            <button type="button" class="btn buttonInicia w-100" (click)="clickComplete()">
-                            SUBMIT
-                        </button></a>
-                    </div>
-                </div>
+    </div>
+    <div class="col-6">
+      <h1 class="fL"> {{"REGISTER.SIGNUP" | translate }}</h1>
+    </div>
+  </div>
+  <form [formGroup]="transporticFormInfo ">
+    <div class="row">
+      <div class="col-12">
+        <div class="wrapBox ">
+          <div class="regDiv info " [ngClass]="{ 'info':!isActiveInfo} ">
+            <div>
+              <app-textfield labelname="{{'REGISTER.NAME' | translate }}"></app-textfield>
             </div>
+            <div>
+              <app-textfield labelname="{{'REGISTER.SURNAMES' | translate }}"></app-textfield>
+            </div>
+            <div>
+              <app-textfield labelname="{{'REGISTER.NIF' | translate }}"></app-textfield>
+            </div>
+            <div>
+              <app-textfield labelname="{{'REGISTER.PHONE' | translate }}"></app-textfield>
+            </div>
+            <div>
+              <app-textfield labelname="{{'REGISTER.EMAIL' | translate }}"></app-textfield>
+            </div>
+
+            <button type="button" class="btn button_submit w-100" (click)="clickInfo()">
+              {{"REGISTER.SUBMIT" | translate }}
+            </button>
+          </div>
+          <div class="regDiv account" [class.active]="isActiveAccount ">
+            <app-textfield labelname="{{'LOGIN.USERNAME' | translate }}" formControlName="name"></app-textfield>
+            <app-textfield formControlName="password" placeholder="Password"
+              labelname="{{'LOGIN.PASSWORD' | translate }}" type="password" showPasswordIcon=True>
+            </app-textfield>
+            <div class="checkboxWrap">
+              <input type="checkbox" id="ControlCheck" name="ControlCheck" value="Bike">
+              <label for="ControlCheck">{{"REGISTER.TERMS" | translate }}</label>
+            </div>
+            <button type="button" class="btn button_submit w-100" (click)="clickEmail()">
+              {{"REGISTER.SUBMIT" | translate }}
+            </button>
+          </div>
+          <div class="regDiv email " [class.active]="isActiveEmail ">
+            <label>{{"REGISTER.OKGOOGLE" | translate }}</label>
+            <app-textfield labelname="{{'REGISTER.GMAIL' | translate }}" formControlName="name"></app-textfield>
+            <label class="grey">{{"REGISTER.PRIVACY" | translate }} <a
+                href="#">{{"REGISTER.TERMSANDCONDITIONS" | translate }}</a> {{"REGISTER.SERVICE" | translate }}</label>
+            <button type="button" class="btn buttonBackground w-100">
+              {{"REGISTER.SKIP" | translate }}
+            </button>
+            <a routerLink="/summary" class="href">
+              <button type="button" class="btn button_submit w-100" (click)="clickComplete()">
+                {{"REGISTER.SUBMIT" | translate }}
+              </button></a>
+          </div>
         </div>
-    </form>
+      </div>
+    </div>
+  </form>
 </div>

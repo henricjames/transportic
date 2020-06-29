@@ -1,133 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import "../../../../styles/main";
+
 .wrapper {
-    width: 100%;
-    height: 500px;
-    margin: 0 auto;
-    border-radius: 10px;
-    .fL {
-        float: left;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+
+  .fL {
+    float: left;
+  }
+
+  .transportic_logo {
+    width: 55px;
+    margin-bottom: 22px;
+  }
+
+  .fa-times-thin:before {
+    content: '\00d7';
+    font-size: 32px;
+    font-weight: bold;
+    color: get-color(grey);
+  }
+
+  h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+    color: get-color(primary);
+    font-size: 36px;
+    float: left;
+  }
+
+  .iconClose {
+    width: 35px;
+    height: 35px;
+    float: left;
+  }
+
+  .close {
+    color: get-color(grey);
+    width: 14px;
+    height: 14px;
+    float: left;
+  }
+
+  input {
+    border: 1px;
+    width: 75%;
+    padding: 10px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+  }
+
+  .account {
+    display: none;
+
+    .checkboxWrap {
+      width: 100%;
+
+      input {
+        width: auto;
+        display: inline-block;
+        margin-right: 5px;
+      }
     }
-    .transportic_logo {
-        width: 55px;
-        margin-bottom: 22px;
+  }
+
+  .info {
+    display: none;
+  }
+
+  .email {
+    padding-top: 20px;
+    display: none;
+
+    .grey {
+      color: get-color(dark-grey);
+
+      a {
+        text-decoration: underline;
+        color: get-color(grey-color);
+      }
     }
-    .fa-times-thin:before {
-        content: '\00d7';
-        font-size: 32px;
-        font-weight: bold;
-        color: #666E7D;
-    }
-    h1 {
-        font-family: 'Rubik', sans-serif;
-        font-weight: lighter;
-        color: #0A4FD8;
-        font-size: 36px;
-        // margin: 0 18px;
-        float: left;
-    }
-    .iconClose {
-        width: 35px;
-        height: 35px;
-        float: left;
-    }
-    .logo {
-        width: 55px;
-    }
-    .close {
-        color: #666E7D;
-        width: 14px;
-        height: 14px;
-        float: left;
-    }
-    .regLogo {
-        width: 55px;
-    }
-    .stepper {
-        float: right;
-        width: 60px;
-        margin-top: 35px;
-        .stepDot {
-            float: left;
-            width: 7px;
-            height: 7px;
-            background-color: #0A4FD8;
-            float: left;
-            margin-left: 5px;
-            border-radius: 5px;
-        }
-        .current {
-            width: 30px;
-            border-radius: 5px;
-        }
-        .block02 {}
-        .block03 {}
-    }
-    input {
-        border: 1px;
-        width: 75%;
-        padding: 10px;
-        border-radius: 2px;
-        margin-bottom: 20px;
-    }
-    .account {
-        display: none;
-        .checkboxWrap {
-            width: 100%;
-            input {
-                width: auto;
-                display: inline-block;
-                margin-right: 5px;
-            }
-        }
-    }
-    .info {
-        display: none;
-    }
-    .email {
-        padding-top: 20px;
-        display: none;
-        .grey {
-            color: #888888;
-            a {
-                text-decoration: underline;
-                color: #ccc;
-            }
-        }
-    }
-    .active {
-        display: block;
-    }
-    .buttonBackground {
-        text-transform: uppercase;
-        margin-top: 20px;
-        box-sizing: border-box;
-        height: 48px;
-        width: 312px;
-        border: 1px solid #d3d9e5;
-        border-radius: 4px;
-        background-color: #ffffff;
-        color: #0A4FD8;
-    }
-    .buttonInicia {
-        text-transform: uppercase;
-        margin-top: 17px;
-        margin-bottom: 8px;
-        height: 48px;
-        width: 312px;
-        border-radius: 4px;
-        background-color: #0a4fd8;
-        color: #ffffff;
-    }
-    .textInicia {
-        height: 17px;
-        width: 221.87px;
-        color: #ffffff;
-        font-family: $font-family-default;
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 0;
-        line-height: 17px;
-        text-align: center;
-    }
+  }
+
+  .active {
+    display: block;
+  }
+
+  .buttonBackground {
+    text-transform: uppercase;
+    margin-top: 20px;
+    box-sizing: border-box;
+    height: 48px;
+    width: 312px;
+    border: 1px solid get-color(light-grey);
+    border-radius: 4px;
+    background-color: get-color(white);
+    color: get-color(primary);
+  }
+
+  .button_submit {
+    text-transform: uppercase;
+    margin-top: 17px;
+    margin-bottom: 8px;
+    height: 48px;
+    width: 312px;
+    border-radius: 4px;
+    background-color: get-color(primary);
+    color: get-color(white);
+  }
 }
