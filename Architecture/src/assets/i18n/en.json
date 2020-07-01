@@ -58,6 +58,7 @@
     "LABEL": "advance notice",
     "TERMINAL": "TERMINAL",
     "DATE": "EXPECTED DATE",
-    "CONTAINER": "CONTAINER"
+    "CONTAINER": "CONTAINER",
+    "ADD": "add a pin code"
   }
 }

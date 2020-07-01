@@ -17,12 +17,13 @@
 
   &_info {
     border-left-color: get-color(yellow);
-    background-color:get-color(light-yellow);
+    background-color: get-color(light-yellow);
   }
 
   &__content {
     padding-top: 10px;
     padding-left: 10px;
+    height: 92px;
   }
 
   &__icon {
@@ -38,14 +39,15 @@
     letter-spacing: 0;
     line-height: 19px;
   }
-}
 
-ul {
-  list-style: none;
+  &__list {
+    list-style: none;
+    padding-left: initial;
+  }
 
-  li {
+  &__item {
     color: get-color(black);
-    font-family: "Source Code Pro";
+    font-family: $font-family-code;
     font-size: 12px;
     letter-spacing: -0.24px;
     line-height: 15px;

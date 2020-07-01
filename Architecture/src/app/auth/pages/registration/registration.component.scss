@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 @import "../../../../styles/main";
 
 .wrapper {
@@ -9,25 +9,23 @@
 
   .fL {
     float: left;
-    //line-height: 36px;
     margin-bottom: 35px;
   }
 
   .transportic_logo {
     width: 55px;
-    margin-bottom:16px
-    
+    margin-bottom: 16px
   }
 
   .fa-times-thin:before {
-    content: '\00d7';
+    content: "\00d7";
     font-size: 32px;
     font-weight: bold;
     color: get-color(grey);
   }
 
   h1 {
-    font-family: 'Rubik', sans-serif;
+    font-family: $font-family-default;
     font-weight: lighter;
     color: get-color(primary);
     font-size: 36px;
@@ -59,11 +57,10 @@
     display: none;
 
     .checkboxWrap {
-      width: 100%;
+      display: flex;
 
       input {
         width: auto;
-        display: inline-block;
         margin-right: 5px;
       }
     }
@@ -93,10 +90,8 @@
 
   .buttonBackground {
     text-transform: uppercase;
-    margin-top: 20px;
     box-sizing: border-box;
     height: 48px;
-    width: 312px;
     border: 1px solid get-color(light-grey);
     border-radius: 4px;
     background-color: get-color(white);
@@ -105,12 +100,32 @@
 
   .button_submit {
     text-transform: uppercase;
-    margin-top: 124px;
+    margin-top: 8px;
     margin-bottom: 8px;
     height: 48px;
-    width: 312px;
     border-radius: 4px;
     background-color: get-color(primary);
     color: get-color(white);
+  }
+
+  .stepper {
+    float: right;
+    width: 60px;
+    margin-top: 35px;
+
+    .stepDot {
+      float: left;
+      width: 7px;
+      height: 7px;
+      background-color: get-color(primary);
+      float: left;
+      margin-left: 5px;
+      border-radius: 5px;
+    }
+
+    .current {
+      width: 30px;
+      border-radius: 5px;
+    }
   }
 }

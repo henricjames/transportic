@@ -58,6 +58,7 @@
     "LABEL": "preavisos",
     "TERMINAL": "TERMINAL",
     "DATE": "FECHA PREVISTA",
-    "CONTAINER": "CONTENEDOR"
+    "CONTAINER": "CONTENEDOR",
+    "ADD": "añade un pin code"
   }
 }

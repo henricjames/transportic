@@ -1,0 +1,11 @@
+@import "../../../../styles/main";
+
+.buttonBackground {
+  text-transform: uppercase;
+  box-sizing: border-box;
+  height: 42px;
+  border: 1px solid get-color(light-grey);
+  border-radius: 4px;
+  background-color: get-color(white);
+  color: get-color(dark-blue);
+}

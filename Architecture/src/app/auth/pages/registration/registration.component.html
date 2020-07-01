@@ -7,63 +7,72 @@
     </div>
     <div class="col-12">
       <div class="transportic_logo">
-        <img src="./../../../../assets/images/rsz_transportic.png">
+        <img src="./../../../../assets/images/rsz_transportic.png" />
       </div>
-
     </div>
     <div class="col-6">
-      <h1 class="fL"> {{"REGISTER.SIGNUP" | translate }}</h1>
+      <h1 class="fL">{{ "REGISTER.SIGNUP" | translate }}</h1>
+    </div>
+    <div class="col-6">
+      <div class="stepper">
+        <div class="stepDot block01" [ngClass]="{ current: infoStepper }"></div>
+        <div class="stepDot block02" [ngClass]="{ current: accountStepper }"></div>
+        <div class="stepDot block03" [ngClass]="{ current: emailStepper }"></div>
+      </div>
     </div>
   </div>
-  <form [formGroup]="transporticFormInfo ">
+  <form [formGroup]="transporticFormInfo">
     <div class="row">
       <div class="col-12">
-        <div class="wrapBox ">
-          <div class="regDiv info " [ngClass]="{ 'info':!isActiveInfo} ">
+        <div class="wrapBox">
+          <div class="regDiv info" [ngClass]="{ info: !isActiveInfo }">
             <div>
-              <app-textfield labelname="{{'REGISTER.NAME' | translate }}"></app-textfield>
+              <app-textfield labelname="{{ 'REGISTER.NAME' | translate }}"></app-textfield>
             </div>
             <div>
-              <app-textfield labelname="{{'REGISTER.SURNAMES' | translate }}"></app-textfield>
+              <app-textfield labelname="{{ 'REGISTER.SURNAMES' | translate }}"></app-textfield>
             </div>
             <div>
-              <app-textfield labelname="{{'REGISTER.NIF' | translate }}"></app-textfield>
+              <app-textfield labelname="{{ 'REGISTER.NIF' | translate }}"></app-textfield>
             </div>
             <div>
-              <app-textfield labelname="{{'REGISTER.PHONE' | translate }}"></app-textfield>
+              <app-textfield labelname="{{ 'REGISTER.PHONE' | translate }}"></app-textfield>
             </div>
             <div>
-              <app-textfield labelname="{{'REGISTER.EMAIL' | translate }}"></app-textfield>
+              <app-textfield labelname="{{ 'REGISTER.EMAIL' | translate }}"></app-textfield>
             </div>
 
             <button type="button" class="btn button_submit w-100" (click)="clickInfo()">
-              {{"REGISTER.SUBMIT" | translate }}
+              {{ "REGISTER.SUBMIT" | translate }}
             </button>
           </div>
-          <div class="regDiv account" [class.active]="isActiveAccount ">
-            <app-textfield labelname="{{'LOGIN.USERNAME' | translate }}" formControlName="name"></app-textfield>
+          <div class="regDiv account" [class.active]="isActiveAccount">
+            <app-textfield labelname="{{ 'LOGIN.USERNAME' | translate }}" formControlName="name"></app-textfield>
             <app-textfield formControlName="password" placeholder="Password"
-              labelname="{{'LOGIN.PASSWORD' | translate }}" type="password" showPasswordIcon=True>
+              labelname="{{ 'LOGIN.PASSWORD' | translate }}" type="password" showPasswordIcon="True">
             </app-textfield>
             <div class="checkboxWrap">
-              <input type="checkbox" id="ControlCheck" name="ControlCheck" value="Bike">
-              <label for="ControlCheck">{{"REGISTER.TERMS" | translate }}</label>
+              <input type="checkbox" id="ControlCheck" name="ControlCheck" value="Bike" />
+              <label for="ControlCheck">{{
+                "REGISTER.TERMS" | translate
+              }}</label>
             </div>
             <button type="button" class="btn button_submit w-100" (click)="clickEmail()">
-              {{"REGISTER.SUBMIT" | translate }}
+              {{ "REGISTER.SUBMIT" | translate }}
             </button>
           </div>
-          <div class="regDiv email " [class.active]="isActiveEmail ">
-            <label>{{"REGISTER.OKGOOGLE" | translate }}</label>
-            <app-textfield labelname="{{'REGISTER.GMAIL' | translate }}" formControlName="name"></app-textfield>
-            <label class="grey">{{"REGISTER.PRIVACY" | translate }} <a
-                href="#">{{"REGISTER.TERMSANDCONDITIONS" | translate }}</a> {{"REGISTER.SERVICE" | translate }}</label>
+          <div class="regDiv email" [class.active]="isActiveEmail">
+            <label style="margin-bottom: 24px;">{{ "REGISTER.OKGOOGLE" | translate }}</label>
+            <app-textfield labelname="{{ 'REGISTER.GMAIL' | translate }}" formControlName="name"></app-textfield>
+            <label class="grey">{{ "REGISTER.PRIVACY" | translate }}
+              <a href="#">{{ "REGISTER.TERMSANDCONDITIONS" | translate }}</a>
+              {{ "REGISTER.SERVICE" | translate }}</label>
             <button type="button" class="btn buttonBackground w-100">
-              {{"REGISTER.SKIP" | translate }}
+              {{ "REGISTER.SKIP" | translate }}
             </button>
             <a routerLink="/summary" class="href">
               <button type="button" class="btn button_submit w-100" (click)="clickComplete()">
-                {{"REGISTER.SUBMIT" | translate }}
+                {{ "REGISTER.SUBMIT" | translate }}
               </button></a>
           </div>
         </div>
