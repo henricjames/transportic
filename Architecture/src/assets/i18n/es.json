@@ -31,7 +31,9 @@
     "NOTICES": "Avisos",
     "CONTACTS": "Contacto",
     "ORDERS": "Ordenes",
-    "PROFILE": "Mi Profil"
+    "PROFILE": "Mi Profil",
+    "PINCODE-HEAD": "Consulta un PINCODE",
+    "VEHICLEREGISTRATION": "Matricula del vehiculo"
   },
   "REGISTER": {
     "NAME": "NOMBRE",

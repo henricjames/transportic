@@ -31,7 +31,9 @@
     "NOTICES": "Notices",
     "CONTACTS": "Contacts",
     "ORDERS": "Orders",
-    "PROFILE": "My Profile"
+    "PROFILE": "My Profile",
+    "PINCODE-HEAD": "Consult a PINCODE",
+    "VEHICLERGISTRATION": "vehicle registraion"
   },
   "REGISTER": {
     "NAME": "NAME",
