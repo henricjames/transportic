@@ -1,6 +1,6 @@
 $textcolor: #062C76;
 .form-group {
-    margin: 26px 0; //18
+
     position: relative;
     height: 56px;
     box-sizing: border-box;
@@ -27,6 +27,9 @@ $textcolor: #062C76;
     border: 1px solid #D3D9E5;
     border-radius: 4px;
     height: 48px;
+    box-sizing: border-box;
+    margin-bottom:15px;
+    padding:0 5px;
     &:focus {
         outline: none;
     }
