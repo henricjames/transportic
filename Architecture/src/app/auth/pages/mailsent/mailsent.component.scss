@@ -1,11 +1,14 @@
 @import "../../../../styles/main";
 
 .transportic_logo {
+  text-align: center;
   margin-top: 140px;
 }
+
 .forgot_password_heading {
+  text-align: center;
+  font-family: $font-family-default;
   color: $color-primary;
-  font-family: Rubik;
   font-size: 28px;
   font-weight: 300;
   letter-spacing: -0.09px;
@@ -13,6 +16,8 @@
 }
 
 .mail_sent_message {
+  font-family: $font-family-default;
+  text-align: center;
   margin-top: 11px;
 }
 
@@ -25,7 +30,7 @@
 
 .button_text {
   color: $color-white;
-  font-family: Rubik;
+  font-family: $font-family-default;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;
