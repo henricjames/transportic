@@ -17,7 +17,7 @@
   content: '\00d7';
   font-size: 32px;
   font-weight: bold;
-  color: #666E7D;
+  color: $color-dark-grey;
 }
 // h1 {
 //   font-family: 'Rubik', sans-serif;
@@ -28,10 +28,10 @@
 // }
 
 .pincodeadd_heading{
-  line-height: 36px;
-  font-family: 'Rubik', sans-serif;
+  line-height:$line-height;
+  font-family:$font-family-default;
   font-weight: lighter;
-  color: #0A4FD8;
+  color:$color-primary;
   font-size: 36px;
   float: left;
 }
@@ -44,7 +44,7 @@
   width: 55px;
 }
 .close {
-  color: #666E7D;
+  color: $color-dark-grey;
   width: 14px;
   height: 14px;
   float: left;
@@ -59,7 +59,7 @@
   height: 48px;
   width: 312px;
   border-radius: 4px;
-  background-color: #0a4fd8;
-  color: #ffffff;
+  background-color:$color-primary;
+  color:$color-white;
 }
 
