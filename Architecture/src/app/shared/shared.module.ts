@@ -11,6 +11,7 @@ import { LoaderComponent } from './loader/loader.component';
 import { RegformComponent } from './regform/regform.component';
 import { PincodeListingComponent } from './pincode-listing/pincode-listing.component';
 import { PageHeaderComponent } from './page-header/page-header.component';
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -22,6 +23,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     RegformComponent,
     PincodeListingComponent,
     PageHeaderComponent,
+    NavigationBarComponent,
   ],
 
   imports: [
@@ -42,6 +44,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     RegformComponent,
     PincodeListingComponent,
     PageHeaderComponent,
+    NavigationBarComponent,
   ],
 })
 export class SharedModule {}

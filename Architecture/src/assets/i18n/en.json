@@ -55,12 +55,24 @@
     "SUMMARY": "Now you can request to operate with a transport company from your user profile.",
     "ACCEPT": "TO ACCEPT"
   },
+  "FORGOTPASSWORD": {
+    "RECOVERPASSWORD": "Recover password",
+    "RECOVERPASSWORDINFO": "Enter your username or email and we will send you an email with a new password.",
+    "SEND": "SEND",
+    "ACCEPT": "ACCEPT",
+    "RESETINFO": "We have sent you an email to change your password"
+  },
   "PINCODE": {
     "TITLE": "PINCODES",
     "LABEL": "advance notice",
     "TERMINAL": "TERMINAL",
     "DATE": "EXPECTED DATE",
     "CONTAINER": "CONTAINER",
-    "ADD": "add a pin code"
+    "ADD": "add a pin code",
+    "CONSULT": "consult",
+    "CUSTOMS": "Customs",
+    "SURRENDER": "Surrender",
+    "ADMIT": "Admit",
+    "RELATEDDOC": "Related Documentation"
   }
 }
