@@ -6,22 +6,31 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AlertModule } from 'ngx-bootstrap/alert';
 import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { TextfieldComponent } from './textfield/textfield.component';
-import {ReactiveFormsModule,FormsModule} from  '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { LoaderComponent } from './loader/loader.component';
 import { RegformComponent } from './regform/regform.component';
+import { PincodeListingComponent } from './pincode-listing/pincode-listing.component';
+import { PageHeaderComponent } from './page-header/page-header.component';
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
 @NgModule({
-  declarations: [TextfieldComponent, LoaderComponent, RegformComponent],
-  
+  declarations: [
+    TextfieldComponent,
+    LoaderComponent,
+    RegformComponent,
+    PincodeListingComponent,
+    PageHeaderComponent,
+  ],
+
   imports: [
     CommonModule,
     TranslateModule,
     AlertModule.forRoot(),
     ReactiveFormsModule,
     FormsModule,
-    ButtonsModule.forRoot()
+    ButtonsModule.forRoot(),
   ],
   exports: [
     TranslateModule,
@@ -30,7 +39,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     ReactiveFormsModule,
     FormsModule,
     LoaderComponent,
-    RegformComponent
-  ]
+    RegformComponent,
+    PincodeListingComponent,
+    PageHeaderComponent,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}

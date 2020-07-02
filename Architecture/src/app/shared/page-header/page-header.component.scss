@@ -1,0 +1,37 @@
+@import "../../../styles/main";
+
+.header {
+  &__title {
+    height: 36px;
+    color: get-color(primary);
+    font-family: $font-family-default;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: -0.09px;
+    line-height: 36px;
+  }
+
+  &__sub-title {
+    color: get-color(light-blue);
+    font-family: $font-family-default;
+    font-size: 16px;
+    letter-spacing: -0.1px;
+    line-height: 19px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      border-bottom: 1px solid get-color(light-grey);
+      top: 50%;
+    }
+  }
+
+  &__label {
+    background-color: get-color(white);
+    z-index: 2;
+    margin-right: 8px;
+    color: get-color(light-blue);
+  }
+}

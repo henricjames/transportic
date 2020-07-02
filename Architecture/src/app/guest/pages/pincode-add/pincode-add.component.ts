@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-pincode-add',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pincode-add.component.scss']
 })
 export class PincodeAddComponent implements OnInit {
-
-  constructor() { }
+  transporticForm: FormGroup
+ 
+  constructor(private fb:FormBuilder) { }
 
   ngOnInit(): void {
+    this.transporticForm = this.fb.group({
+      // name : new FormControl('', Validators.required),
+      pincode:'',
+      password: ''
+    })
   }
 
 }
