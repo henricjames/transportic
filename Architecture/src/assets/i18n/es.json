@@ -44,6 +44,6 @@
     "RECOVERPASSWORDINFO": "Introduce tu usuario o email y te mandaremos un correo con una nueva contraseña.",
     "SEND": "ENVIAR",
     "ACCEPT": "ACCEPTAR",
-    "RESETINFO":"Te hemos enviado un correo electrónico para cambiar la contraseña"
+    "RESETINFO": "Te hemos enviado un correo electrónico para cambiar la contraseña"
   }
 }
