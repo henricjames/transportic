@@ -13,7 +13,8 @@ $colors: (primary: #0a4fd8,
   grey-color: #ccc,
   dark-blue: #1555D6,
   red:#C80B00,
-  light-red: #f3bfbd);
+  light-red: #f3bfbd,
+  ash: #8d939f);
 
 $color-primary: map-get($colors, primary);
 $color-black: map-get($colors, black);

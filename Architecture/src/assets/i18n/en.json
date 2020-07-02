@@ -74,5 +74,11 @@
     "SURRENDER": "Surrender",
     "ADMIT": "Admit",
     "RELATEDDOC": "Related Documentation"
+  },
+  "EXTERNAL": {
+    "CAMERA": "SEE CÁMERAS",
+    "CALCULATION": "CALCULATION OF THE TIME OF ARRIVAL PUERTO",
+    "TERMINALBLOCK": "TERMINAL BLOCK",
+    "CERTIFICATE": "SUITABLE CERTIFICATE"
   }
 }

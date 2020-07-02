@@ -74,5 +74,11 @@
     "SURRENDER": "Entréguese",
     "ADMIT": "Admítese",
     "RELATEDDOC": "Documentación relacionada"
+  },
+  "EXTERNAL": {
+    "CAMERA": "VER CÁMARAS",
+    "CALCULATION": "CÁLCULO DE LA HORA DE LLEGADA PUERTO",
+    "TERMINALBLOCK": "BLOQUE TERMINAL",
+    "CERTIFICATE": "CERTIFICADO IDONEADAD"
   }
 }
