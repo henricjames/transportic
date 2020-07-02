@@ -1,8 +1,15 @@
 $textcolor: #062c76;
 .form-group {
-
-    position: relative;
-    height: 56px;
+  position: relative;
+  height: 56px;
+  box-sizing: border-box;
+  .form-group__label {
+    background-color: white;
+    position: absolute;
+    top: -5px;
+    left: 8px;
+    height: 13px;
+    margin: 0 4px;
     box-sizing: border-box;
     color: $textcolor;
     font-size: 11px;
@@ -13,18 +20,18 @@ $textcolor: #062c76;
     line-height: 13px;
     text-transform: uppercase;
   }
-
+}
 
 .form-group__input {
-    border: 1px solid #D3D9E5;
-    border-radius: 4px;
-    height: 48px;
-    box-sizing: border-box;
-    margin-bottom:15px;
-    padding:0 5px;
-    &:focus {
-        outline: none;
-    }
+  border: 1px solid #d3d9e5;
+  border-radius: 4px;
+  height: 48px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding: 0 5px;
+  &:focus {
+    outline: none;
+  }
 }
 
 .ic-eye {
