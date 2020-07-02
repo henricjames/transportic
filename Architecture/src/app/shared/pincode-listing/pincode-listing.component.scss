@@ -1,0 +1,55 @@
+@import "../../../styles/main";
+
+.pincode {
+  box-sizing: border-box;
+  min-height: 112px;
+  border: 1px solid get-color(light-grey);
+  border-radius: 4px;
+  background-color: get-color(white);
+  margin-bottom: 12px;
+  border-left-width: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  &_success {
+    border-left-color: get-color(green);
+  }
+
+  &_info {
+    border-left-color: get-color(yellow);
+    background-color: get-color(light-yellow);
+  }
+
+  &__content {
+    padding-top: 10px;
+    padding-left: 10px;
+    height: 92px;
+  }
+
+  &__icon {
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+
+  &__title {
+    color: get-color(primary);
+    font-family: $font-family-default;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 19px;
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: initial;
+  }
+
+  &__item {
+    color: get-color(black);
+    font-family: $font-family-code;
+    font-size: 12px;
+    letter-spacing: -0.24px;
+    line-height: 15px;
+  }
+}

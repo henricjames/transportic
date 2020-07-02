@@ -30,8 +30,10 @@
     "PINCODE": "PIN CODE",
     "NOTICES": "Notices",
     "CONTACTS": "Contacts",
-    "PINCODE-HEAD":"Consult a PINCODE",
-    "VEHICLERGISTRATION":"vehicle registraion"
+    "ORDERS": "Orders",
+    "PROFILE": "My Profile",
+    "PINCODE-HEAD": "Consult a PINCODE",
+    "VEHICLERGISTRATION": "vehicle registraion"
   },
   "REGISTER": {
     "NAME": "NAME",
@@ -39,6 +41,26 @@
     "NIF": "NIF",
     "PHONE": "MOBILE PHONE",
     "EMAIL": "EMAIL",
-    "GMAIL": "EMAIL GMAIL"
+    "GMAIL": "EMAIL GMAIL",
+    "SUBMIT": "FOLLOWING",
+    "SIGNUP": "Sign up",
+    "SKIP": "SKIP",
+    "TERMS": "I have read and accept the following Terms of Service and Privacy Policy",
+    "OKGOOGLE": "Add the Gmail email and control the Transportic application by voice from OK Google.",
+    "PRIVACY": "By inserting the email you accept the ",
+    "TERMSANDCONDITIONS": "terms and conditions",
+    "SERVICE": "of the service of Google Inc.",
+    "REGISTRY": "Registry",
+    "NOTIFICATION": "We have sent a validation email to the following address",
+    "SUMMARY": "Now you can request to operate with a transport company from your user profile.",
+    "ACCEPT": "TO ACCEPT"
+  },
+  "PINCODE": {
+    "TITLE": "PINCODES",
+    "LABEL": "advance notice",
+    "TERMINAL": "TERMINAL",
+    "DATE": "EXPECTED DATE",
+    "CONTAINER": "CONTAINER",
+    "ADD": "add a pin code"
   }
 }

@@ -1,18 +1,19 @@
 <div class="summary">
-    <div class="row">
-        <div class="col-12 transportic_logo">
-            <img src="./../../../../assets/images/rsz_transportic.png">
-        </div>
-        <div class="col-12">
-            <h1 class="fL">Registration</h1>
-        </div>
-        <label>Hemos enviado un correo de validación a la siguiente dirección: <b>mail@portic.com</b>
-        </label>
-        <label>Ahora ya puede solicitar operar con una empresa de transporte desde su perfil de usuario.</label>
-
+  <div class="row">
+    <div class="col-12 transportic_logo">
+      <img src="./../../../../assets/images/rsz_transportic.png">
     </div>
+    <div class="col-12">
+      <h1 class="fL">{{"REGISTER.REGISTRY" | translate }}</h1>
+    </div>
+    <label>{{"REGISTER.NOTIFICATION" | translate }}: <b>mail@portic.com</b>
+    </label>
+    <label>{{"REGISTER.SUMMARY" | translate }}</label>
+
+  </div>
 </div>
-<a href="/login" class="href">
-    <button type="button" class="btn buttonInicia w-100">
-    SUBMIT
-</button></a>
+<a routerLink="/login" class="href">
+  <button type="button" class="btn button_submit w-100">
+    {{"REGISTER.ACCEPT" | translate }}
+  </button>
+</a>

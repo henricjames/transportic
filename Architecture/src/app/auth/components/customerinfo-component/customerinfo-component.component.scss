@@ -5,21 +5,17 @@
   color: $color-blue;
   font-family: $font-family-default;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: bold;
   letter-spacing: 0;
   line-height: 16px;
-
 }
-
 .customer_info {
   color: $color-black;
   font-family: $font-family-default;
   font-size: 12px;
   letter-spacing: 0;
   line-height: 16px;
-
 }
-
 .contact-info {
   list-style: none;
   margin: 0;
@@ -30,6 +26,7 @@
 
     a {
       font-size: 12px;
+      color:#888888;
 
       i {
         width: 16px;
@@ -39,9 +36,10 @@
         color: get-color(primary);
         margin-right: 13px;
       }
-
       span {
         color: get-color(primary);
+        font-size: 12px;
+        font-weight:bold;
       }
     }
   }
