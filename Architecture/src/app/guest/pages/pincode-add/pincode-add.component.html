@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper pt-3">
   <div class="row">
     <div class="col-12">
       <a routerLink="/" class="href" class="iconClose">
@@ -23,9 +23,11 @@
             <app-textfield labelname="{{'GUEST.PINCODE' | translate }}"></app-textfield>
             <app-textfield labelname="{{'GUEST.VEHICLEREGISTRATION' | translate }}">
             </app-textfield>
-            <button type="button" class="btn buttonInicia w-100">
-              {{"PINCODE.CONSULT" | translate }}
-            </button>
+            <div class="container-fluid button__container">
+              <button type="button" class="btn button__submit w-100">
+                {{"PINCODE.CONSULT" | translate }}
+              </button>
+            </div>
           </div>
         </div>
       </div>

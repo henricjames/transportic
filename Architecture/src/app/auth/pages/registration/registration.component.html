@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper pt-3">
   <div class="row">
     <div class="col-12">
       <a routerLink="/login" class="href" class="iconClose">
@@ -41,10 +41,11 @@
             <div>
               <app-textfield labelname="{{ 'REGISTER.EMAIL' | translate }}"></app-textfield>
             </div>
-
-            <button type="button" class="btn button_submit w-100" (click)="clickInfo()">
-              {{ "REGISTER.SUBMIT" | translate }}
-            </button>
+            <div class="container-fluid button__container">
+              <button type="button" class="btn button_submit  w-100" (click)="clickInfo()">
+                {{ "REGISTER.SUBMIT" | translate }}
+              </button>
+            </div>
           </div>
           <div class="regDiv account" [class.active]="isActiveAccount">
             <app-textfield labelname="{{ 'LOGIN.USERNAME' | translate }}" formControlName="name"></app-textfield>
@@ -57,9 +58,11 @@
                 "REGISTER.TERMS" | translate
               }}</label>
             </div>
-            <button type="button" class="btn button_submit w-100" (click)="clickEmail()">
-              {{ "REGISTER.SUBMIT" | translate }}
-            </button>
+            <div class="container-fluid button__container">
+              <button type="button" class="btn button_submit w-100" (click)="clickEmail()">
+                {{ "REGISTER.SUBMIT" | translate }}
+              </button>
+            </div>
           </div>
           <div class="regDiv email" [class.active]="isActiveEmail">
             <label style="margin-bottom: 24px;">{{ "REGISTER.OKGOOGLE" | translate }}</label>
@@ -67,13 +70,15 @@
             <label class="grey">{{ "REGISTER.PRIVACY" | translate }}
               <a href="#">{{ "REGISTER.TERMSANDCONDITIONS" | translate }}</a>
               {{ "REGISTER.SERVICE" | translate }}</label>
-            <button type="button" class="btn buttonBackground w-100">
-              {{ "REGISTER.SKIP" | translate }}
-            </button>
-            <a routerLink="/summary" class="href">
-              <button type="button" class="btn button_submit w-100" (click)="clickComplete()">
-                {{ "REGISTER.SUBMIT" | translate }}
-              </button></a>
+            <div class="container-fluid button__container">
+              <button type="button" class="btn buttonBackground w-100">
+                {{ "REGISTER.SKIP" | translate }}
+              </button>
+              <a routerLink="/summary" class="href">
+                <button type="button" class="btn button_submit w-100" (click)="clickComplete()">
+                  {{ "REGISTER.SUBMIT" | translate }}
+                </button></a>
+            </div>
           </div>
         </div>
       </div>

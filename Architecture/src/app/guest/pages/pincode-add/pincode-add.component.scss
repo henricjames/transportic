@@ -51,13 +51,19 @@
   width: 55px;
 }
 
-.buttonInicia {
+.button__submit {
   text-transform: uppercase;
   margin-top: 17px;
   margin-bottom: 8px;
   height: 48px;
-  width: 312px;
   border-radius: 4px;
   background-color: $color-primary;
   color: $color-white;
+}
+
+.button__container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }

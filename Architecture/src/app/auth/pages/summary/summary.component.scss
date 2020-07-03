@@ -10,7 +10,6 @@
   margin-top: 17px;
   margin-bottom: 8px;
   height: 48px;
-  width: 312px;
   border-radius: 4px;
   background-color: get-color(primary);
   color: get-color(white);
@@ -33,4 +32,9 @@ label {
   font-size: 16px;
   letter-spacing: 0;
   line-height: 20px;
+}
+
+.button__link {
+  display: flex;
+  justify-content: center;
 }
