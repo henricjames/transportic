@@ -1,0 +1,30 @@
+@import "../../../styles/main";
+
+.title{
+  color:$color-primary;
+  font-family: $font_family_default;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: -0.1px;
+  line-height: 13px;
+}
+.label{
+  margin-top:2px;
+  font-size: 14px;
+  font-family: $font_family_default;
+}
+.pin_code{
+  box-sizing: border-box;
+  &_success {
+
+    border-left: 10px solid;
+    border-left-color: get-color(green);
+  }
+
+  &_info {
+    width:100%;
+    border-left: 10px solid;
+    border-left-color: get-color(yellow);
+    background-color: get-color(light-yellow);
+  }
+}
