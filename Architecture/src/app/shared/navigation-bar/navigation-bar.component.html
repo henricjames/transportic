@@ -1,40 +1,40 @@
-<ul class="navbar p-2">
-  <li class="navbar__item">
+<ul class="layout p-2">
+  <li class="layout__item">
     <a routerLink="">
       <img src="assets/images/pincode.png" alt="pincode" />
-      <div class="navbar__text">
+      <div class="layout__text">
         {{ "GUEST.PINCODE" | translate }}
       </div>
     </a>
   </li>
-  <li *ngIf=!guest class="navbar__item">
+  <li *ngIf=!guest class="layout__item">
     <a routerLink="">
       <img src="assets/images/orders.png" alt="orders" />
-      <div class="navbar__text">
+      <div class="layout__text">
         {{ "GUEST.ORDERS" | translate }}
       </div>
     </a>
   </li>
-  <li class="navbar__item">
+  <li class="layout__item">
     <a routerLink="">
       <img src="assets/images/bell.png" alt="notifications" />
-      <div class="navbar__text">
+      <div class="layout__text">
         {{ "GUEST.NOTICES" | translate }}
       </div>
     </a>
   </li>
-  <li *ngIf=!guest class="navbar__item">
+  <li *ngIf=!guest class="layout__item">
     <a routerLink="">
       <img src="assets/images/profile.png" alt="profile" />
-      <div class="navbar__text">
+      <div class="layout__text">
         {{ "GUEST.PROFILE" | translate }}
       </div>
     </a>
   </li>
-  <li class="navbar__item">
+  <li class="layout__item">
     <a routerLink="">
       <img src="assets/images/contact.png" alt="contact" />
-      <div class="navbar__text">
+      <div class="layout__text">
         {{ "GUEST.CONTACTS" | translate }}
       </div>
     </a>

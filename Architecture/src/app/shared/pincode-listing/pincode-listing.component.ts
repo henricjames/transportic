@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Pincode } from '../../../models/pincode.model';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pincode-listing',
@@ -25,7 +26,11 @@ export class PincodeListingComponent implements OnInit {
       type: 'info',
     },
   ];
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {}
+
+  getDetail(id) {
+    this.router.navigate([`/guest/details/${id}`]);
+  }
 }

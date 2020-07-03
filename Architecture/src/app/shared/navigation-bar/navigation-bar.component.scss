@@ -1,17 +1,19 @@
-@import "../../../../styles/main";
+@import "../../../styles/main";
 
-.navbar {
-  min-height: 56px;
-  background-color: $color-primary;
-  position: fixed;
-  bottom: 0;
-  left: 0;
+.layout {
+  padding: 0 !important;
   display: flex;
   justify-content: space-around;
-  align-items: flex-end;
+  list-style: none;
+  position: fixed;
+  background: $color-primary;
   width: 100%;
-  list-style-type: none;
+  left: 0;
+  right: 0;
+  bottom: 0;
   margin: 0;
+  height: 60px;
+  align-items: center;
 
   &__item {
     text-align: center;

@@ -1,37 +1,35 @@
-
 <div class="wrapper">
   <div class="row">
-      <div class="col-12">
-          <a href="/" class="href" class="iconClose">
-              <i class="fa fa-times fa-times-thin fa-2x close" height="14px" width="14px"></i>
-          </a>
+    <div class="col-12">
+      <a routerLink="/" class="href" class="iconClose">
+        <i class="fa fa-times fa-times-thin fa-2x close" height="14px" width="14px"></i>
+      </a>
+    </div>
+    <div class="col-12">
+      <div class="transportic_logo">
+        <img src="./../../../../assets/images/logo.png">
       </div>
-      <div class="col-12">
-          <div class="transportic_logo">
-              <img src="./../../../../assets/images/logo.png">
-          </div>
 
-      </div>
-      <div class="col-6">
-          <h1 class="pincodeadd_heading">{{"GUEST.PINCODE-HEAD" | translate }}</h1>
-      </div>
+    </div>
+    <div class="col-6">
+      <h1 class="pincodeadd_heading">{{"GUEST.PINCODE-HEAD" | translate }}</h1>
+    </div>
   </div>
   <form formGroup="transporticForm">
     <div class="row">
-        <div class="col-12">
-          <div class="wrapBox ">
-            <div>
-                <app-textfield labelname="{{'GUEST.PINCODE' | translate }}"></app-textfield>
-                <app-textfield labelname="{{'GUEST.VEHICLEREGISTRATION' | translate }}"></app-textfield>
-                <button type="button" class="btn buttonInicia w-100">
-                    Submit
-              </button>
-
-                
-            </div>
+      <div class="col-12">
+        <div class="wrapBox ">
+          <div>
+            <app-textfield labelname="{{'GUEST.PINCODE' | translate }}"></app-textfield>
+            <app-textfield labelname="{{'GUEST.VEHICLEREGISTRATION' | translate }}">
+            </app-textfield>
+            <button type="button" class="btn buttonInicia w-100">
+              {{"PINCODE.CONSULT" | translate }}
+            </button>
           </div>
         </div>
-      </div> 
-  </form>  
+      </div>
+    </div>
+  </form>
 
 </div>

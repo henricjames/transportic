@@ -41,7 +41,19 @@
     "NIF": "NIF",
     "PHONE": "TELÉFONO MÓVIL",
     "EMAIL": "EMAIL",
-    "GMAIL": "EMAIL GMAIL"
+    "GMAIL": "EMAIL GMAIL",
+    "SUBMIT": "SIGUIENTE",
+    "SIGNUP": "Regístrate",
+    "SKIP": "SALTAR",
+    "TERMS": "He leído y acepto los siguientes Términos de Servicio y Política de privacidad",
+    "OKGOOGLE": "Añade el correo electrónico de Gmail y controla la aplicación Transportic por voz de OK Google.",
+    "PRIVACY": "Insertando el correo aceptas los ",
+    "TERMSANDCONDITIONS": "términos y condiciones",
+    "SERVICE": "del servicio de Google Inc.",
+    "REGISTRY": "Registro",
+    "NOTIFICATION": "Hemos enviado un correo de validación a la siguiente dirección",
+    "SUMMARY": "Ahora ya puede solicitar operar con una empresa de transporte desde su perfil de usuario.",
+    "ACCEPT": "ACEPTAR"
   },
   "FORGOTPASSWORD": {
     "RECOVERPASSWORD": "Recruperar contrasena",
@@ -49,5 +61,24 @@
     "SEND": "ENVIAR",
     "ACCEPT": "ACCEPTAR",
     "RESETINFO": "Te hemos enviado un correo electrónico para cambiar la contraseña"
+  },
+  "PINCODE": {
+    "TITLE": "PINCODES",
+    "LABEL": "preavisos",
+    "TERMINAL": "TERMINAL",
+    "DATE": "FECHA PREVISTA",
+    "CONTAINER": "CONTENEDOR",
+    "ADD": "añade un pin code",
+    "CONSULT": "consultar",
+    "CUSTOMS": "Aduana",
+    "SURRENDER": "Entréguese",
+    "ADMIT": "Admítese",
+    "RELATEDDOC": "Documentación relacionada"
+  },
+  "EXTERNAL": {
+    "CAMERA": "VER CÁMARAS",
+    "CALCULATION": "CÁLCULO DE LA HORA DE LLEGADA PUERTO",
+    "TERMINALBLOCK": "BLOQUE TERMINAL",
+    "CERTIFICATE": "CERTIFICADO IDONEADAD"
   }
 }

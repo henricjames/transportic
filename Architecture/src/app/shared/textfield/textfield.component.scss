@@ -1,8 +1,10 @@
-$textcolor: #062c76;
+@import "../../../styles/main";
+
 .form-group {
   position: relative;
   height: 56px;
   box-sizing: border-box;
+
   .form-group__label {
     background-color: white;
     position: absolute;
@@ -11,7 +13,7 @@ $textcolor: #062c76;
     height: 13px;
     margin: 0 4px;
     box-sizing: border-box;
-    color: $textcolor;
+    color: get-color(blue);
     font-size: 11px;
     padding: 0 4px;
     font-family: Rubik;
@@ -23,12 +25,13 @@ $textcolor: #062c76;
 }
 
 .form-group__input {
-  border: 1px solid #d3d9e5;
+  border: 1px solid get-color(light-grey);
   border-radius: 4px;
   height: 48px;
   box-sizing: border-box;
   margin-bottom: 15px;
   padding: 0 5px;
+
   &:focus {
     outline: none;
   }
@@ -38,5 +41,5 @@ $textcolor: #062c76;
   position: absolute;
   top: 30%;
   right: 12px;
-  color: #8d939f;
+  color: get-color(ash);
 }
