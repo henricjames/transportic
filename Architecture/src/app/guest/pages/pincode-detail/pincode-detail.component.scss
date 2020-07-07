@@ -1,0 +1,18 @@
+.pinHeader {
+    background: #FCF9E5;
+    height: 55px;
+    line-height: 55px;
+    font-size: 16px;
+    color: #0A4FD8;
+    .arrow {
+        padding-right: 10px;
+        font-size: 36px;
+        margin-top: 5px;
+        min-width: 10px;
+        display: inline-block;
+    }
+    .title {
+        line-height: 15px;
+        display: inline-block;
+    }
+}

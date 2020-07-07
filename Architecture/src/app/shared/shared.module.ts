@@ -31,7 +31,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     PincodeRelatedDocumentComponent,
     ExternalLinksComponent,
   ],
-
   imports: [
     CommonModule,
     TranslateModule,
