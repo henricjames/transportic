@@ -1,20 +1,20 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 
 @Component({
   selector: 'app-cookies',
   templateUrl: './cookies.component.html',
-  styleUrls: ['./cookies.component.scss']
+  styleUrls: ['./cookies.component.scss'],
 })
 export class CookiesComponent implements OnInit {
   private cookieValue: string;
-  @Input()
-  visibility: string;
+  @Input() visibility: boolean;
+  @Output() clicked = new EventEmitter();
 
   constructor(private cookieService: CookieService) {}
 
   goToScreen() {
-    this.visibility = 'hidden';
+    this.clicked.emit('data from cookie');
   }
 
   // function to store key on cookie
@@ -23,12 +23,6 @@ export class CookiesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.visibility = 'visible';
-    // set 9 sec timeout to show cookie on screen
-    setTimeout(() => {
-      this.visibility = 'hidden';
-    }, 9000);
-
     // declare date and get current date time
     const date = new Date();
     // add 60 minutes to date

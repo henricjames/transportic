@@ -15,6 +15,7 @@ import { PincodeDetailsComponent } from './pincode-details/pincode-details.compo
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { PincodeRelatedDocumentComponent } from './pincode-related-document/pincode-related-document.component';
 import { ExternalLinksComponent } from './external-links/external-links.component';
+import { PincodeHeaderComponent } from './pincode-header/pincode-header.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -30,6 +31,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavigationBarComponent,
     PincodeRelatedDocumentComponent,
     ExternalLinksComponent,
+    PincodeHeaderComponent,
   ],
 
   imports: [
@@ -54,6 +56,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     NavigationBarComponent,
     PincodeRelatedDocumentComponent,
     ExternalLinksComponent,
+    PincodeHeaderComponent,
   ],
 })
 export class SharedModule {}

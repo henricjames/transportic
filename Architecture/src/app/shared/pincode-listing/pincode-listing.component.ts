@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class PincodeListingComponent implements OnInit {
   pincodes: Pincode[] = [
     {
+      id: 1,
       title: 'PIN CODE Y44C9',
       terminal: 'BEST',
       date: '00/00/2020 · 15:00',
@@ -18,6 +19,7 @@ export class PincodeListingComponent implements OnInit {
       type: 'success',
     },
     {
+      id: 2,
       title: 'PIN CODE Y44C10',
       terminal: 'BESTTTT',
       date: '00/00/2020 · 15:00',
@@ -30,7 +32,7 @@ export class PincodeListingComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  getDetail(id) {
-    this.router.navigate([`/guest/details/${id}`]);
+  getDetail(pincode) {
+    this.router.navigate([`/guest/details/${pincode.id}`]);
   }
 }

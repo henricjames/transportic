@@ -1,19 +1,10 @@
-<app-pincode-details
-  title="MATRÍCULA DEL CONTENEDOR"
-  labelname="ABC123456789"
-  type="info"
-></app-pincode-details>
-<app-pincode-details
-  title="MATRÍCULA DEL CONTENEDOR"
-  labelname="ABC123456789"
-></app-pincode-details>
-<app-pincode-details
-  title="PRECINTO"
-  labelname="123456789"
-></app-pincode-details>
-<!-- <div>
+<div class="pincode-list">
+  <app-pincode-header></app-pincode-header>
   <app-page-header labelname="{{ 'PINCODE.RELATEDDOC' | translate }}"></app-page-header>
+  <app-pincode-details title="MATRÍCULA DEL CONTENEDOR" labelname="ABC123456789" type="info"></app-pincode-details>
+  <app-pincode-details title="MATRÍCULA DEL CONTENEDOR" labelname="ABC123456789"></app-pincode-details>
+  <app-pincode-details title="PRECINTO" labelname="123456789"></app-pincode-details>
   <app-pincode-related-document></app-pincode-related-document>
   <app-external-links label="{{ 'EXTERNAL.CAMERA' | translate }}"></app-external-links>
-</div> -->
-<app-navigation-bar [guest]="true"></app-navigation-bar>
+</div>
+<app-navigation-bar [guest]=true></app-navigation-bar>

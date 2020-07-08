@@ -1,4 +1,5 @@
-<div *ngFor="let pincode of pincodes; let i = index" class="pincode pincode_{{pincode.type}}" (click)="getDetail(i)">
+<div *ngFor="let pincode of pincodes; let i = index" class="pincode pincode_{{pincode.type}}"
+  (click)="getDetail(pincode)">
   <div class="pincode__content">
     <label class="pincode__title">{{ pincode.title }}</label>
     <ul class="pincode__list">
