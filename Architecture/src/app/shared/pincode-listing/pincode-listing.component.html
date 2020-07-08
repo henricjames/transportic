@@ -1,14 +1,15 @@
-<div *ngFor="let pincode of pincodes; let i = index" class="pincode pincode_{{pincode.type}}" (click)="getDetail(i)">
-    <div class="pincode__content">
-        <label class="pincode__title">{{ pincode.title }}</label>
-        <ul class="pincode__list">
-            <li class="pincode__item">{{ "PINCODE.TERMINAL" | translate }}: {{ pincode.terminal }}</li>
-            <li class="pincode__item">{{ "PINCODE.DATE" | translate }}: {{ pincode.date }}</li>
-            <li class="pincode__item">{{ "PINCODE.CONTAINER" | translate }}: {{ pincode.container }}</li>
-            <li class="pincode__item">{{ pincode.status }}</li>
-        </ul>
-    </div>
-    <div class="pincode__icon">
-        <img src="assets/images/ic_pincode.png" alt="pincode" />
-    </div>
+<div *ngFor="let pincode of pincodes; let i = index" class="pincode pincode_{{pincode.type}}"
+  (click)="getDetail(pincode)">
+  <div class="pincode__content">
+    <label class="pincode__title">{{ pincode.title }}</label>
+    <ul class="pincode__list">
+      <li class="pincode__item">{{ "PINCODE.TERMINAL" | translate }}: {{ pincode.terminal }}</li>
+      <li class="pincode__item">{{ "PINCODE.DATE" | translate }}: {{ pincode.date }}</li>
+      <li class="pincode__item">{{ "PINCODE.CONTAINER" | translate }}: {{ pincode.container }}</li>
+      <li class="pincode__item">{{ pincode.status }}</li>
+    </ul>
+  </div>
+  <div class="pincode__icon">
+    <img src="assets/images/ic_pincode.png" alt="pincode" />
+  </div>
 </div>

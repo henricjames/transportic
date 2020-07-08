@@ -1,15 +1,10 @@
-<div class="row">
-    <div class="col-12 pinHeader">
-        <span class="arrow">
-          <a routerLink="/guest"><i class="fa fa-angle-left arrow" height="14px" width="14px"></i></a>          
-          </span> <span class="title">PIN CODE J69543</span></div>
-</div>
-<app-pincode-details title="MATRÍCULA DEL CONTENEDOR" labelname="ABC123456789" type="info"></app-pincode-details>
-<app-pincode-details title="MATRÍCULA DEL CONTENEDOR" labelname="ABC123456789"></app-pincode-details>
-<app-pincode-details title="PRECINTO" labelname="123456789"></app-pincode-details>
-<!-- <div>
+<div class="pincode-list">
+  <app-pincode-header></app-pincode-header>
   <app-page-header labelname="{{ 'PINCODE.RELATEDDOC' | translate }}"></app-page-header>
+  <app-pincode-details title="MATRÍCULA DEL CONTENEDOR" labelname="ABC123456789" type="info"></app-pincode-details>
+  <app-pincode-details title="MATRÍCULA DEL CONTENEDOR" labelname="ABC123456789"></app-pincode-details>
+  <app-pincode-details title="PRECINTO" labelname="123456789"></app-pincode-details>
   <app-pincode-related-document></app-pincode-related-document>
   <app-external-links label="{{ 'EXTERNAL.CAMERA' | translate }}"></app-external-links>
-</div> -->
-<app-navigation-bar [guest]="true"></app-navigation-bar>
+</div>
+<app-navigation-bar [guest]=true></app-navigation-bar>

@@ -9,3 +9,9 @@
   background-color: get-color(white);
   color: get-color(dark-blue);
 }
+
+.pincode-list {
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}

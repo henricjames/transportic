@@ -13,7 +13,7 @@ import { AuthService } from '../../auth.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })
-export class LoginComponent implements OnInit{
+export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   isSubmitted = false;
   // transporticForm: FormGroup;
@@ -51,5 +51,8 @@ export class LoginComponent implements OnInit{
     //   email: ['', [Validators.required, Validators.email]],
     // });
     // this.loginForm.valueChanges.subscribe(console.log);
+  }
+  onCookieClicked(data) {
+    console.log(data);
   }
 }

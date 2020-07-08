@@ -1,4 +1,4 @@
-<div>
+<div class="hasCookie">
   <form [formGroup]="loginForm" (ngSubmit)="login()">
     <div class=transportic_logo>
       <img src="assets/transportic.png">
@@ -51,5 +51,5 @@
   <label class="portic_rights">
     {{"LOGIN.RIGHTS" | translate }}
   </label>
-  <app-cookies></app-cookies>
 </div>
+<app-cookies (clicked)="onCookieClicked($event)"></app-cookies>
