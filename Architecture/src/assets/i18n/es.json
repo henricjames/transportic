@@ -73,7 +73,22 @@
     "CUSTOMS": "Aduana",
     "SURRENDER": "Entréguese",
     "ADMIT": "Admítese",
-    "RELATEDDOC": "Documentación relacionada"
+    "RELATEDDOC": "Documentación relacionada",
+    "INFORMATION": "Información de detalle",
+    "REGISTRATION": "MATRÍCULA DEL CONTENEDOR",
+    "EXPECTEDDATE": "FECHA Y HORA PREVISTA",
+    "BOOKING": "FRANJA HORARIA RESERVA",
+    "OCCUPATION": "OCUPACIÓN",
+    "KINDOFCONTAINER": "TIPO DE CONTENEDOR",
+    "SEAL": "PRECINTO",
+    "KIND": "TIPO",
+    "RUT": "RUT",
+    "COMPANY": "EMPRESA DE TRANSPORTE",
+    "VEHICLENUMBER": "MATRÍCULA DEL VEHÍCULO",
+    "DEPOSIT": "Terminal/Depósito",
+    "LOADTERMINAL": "TERMINAL DE CARGA",
+    "ACCESSTIME": "TIEMPO DE ACCESO Y OPERACIÓN",
+    "EXTERNALLINKS": "Enlaces externos"
   },
   "EXTERNAL": {
     "CAMERA": "VER CÁMARAS",

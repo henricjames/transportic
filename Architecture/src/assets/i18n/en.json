@@ -73,7 +73,22 @@
     "CUSTOMS": "Customs",
     "SURRENDER": "Surrender",
     "ADMIT": "Admit",
-    "RELATEDDOC": "Related Documentation"
+    "RELATEDDOC": "Related Documentation",
+    "INFORMATION": "Detail information",
+    "REGISTRATION": "CONTAINER REGISTRATION",
+    "EXPECTEDDATE": "EXPECTED DATE AND TIME",
+    "BOOKING": "TIME BOOKING RESERVE",
+    "OCCUPATION": "OCCUPATION",
+    "KINDOFCONTAINER": "KIND OF CONTAINER",
+    "SEAL": "SEAL",
+    "KIND": "KIND",
+    "RUT": "RUT",
+    "COMPANY": "TRANSPORT COMPANY",
+    "VEHICLENUMBER": "VEHICLE REGISTRATION NUMBER",
+    "DEPOSIT": "Terminal / Deposit",
+    "LOADTERMINAL": "LOAD TERMINAL",
+    "ACCESSTIME": "ACCESS AND OPERATION TIME",
+    "EXTERNALLINKS": "External links"
   },
   "EXTERNAL": {
     "CAMERA": "SEE CÁMERAS",
