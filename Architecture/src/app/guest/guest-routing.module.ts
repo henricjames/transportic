@@ -3,11 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { PincodeListComponent } from './pages/pincode-list/pincode-list.component';
 import { PincodeDetailComponent } from './pages/pincode-detail/pincode-detail.component';
 import { PincodeAddComponent } from './pages/pincode-add/pincode-add.component';
+import { NoticedetailsComponent } from './noticedetails/noticedetails.component';
 
 const routes: Routes = [
   { path: 'list', component: PincodeListComponent },
   { path: 'details/:id', component: PincodeDetailComponent },
   { path: 'add', component: PincodeAddComponent },
+  { path: 'notice', component: NoticedetailsComponent },
   { path: '', redirectTo: 'list', pathMatch: 'full' },
 ];
 
