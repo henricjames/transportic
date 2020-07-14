@@ -1,21 +1,27 @@
 @import "../../../styles/main";
-.notice-label{
-color:$color-primary;
-font-weight: bold;
-font-size: 12px;
-}
-.notice-heading{
-  color:$color-black;
+
+.notice-label {
+  color: $color-primary;
   font-weight: bold;
+  font-size: 12px;
+  height: 15px;
+  font-family: $font-family-code;
+  letter-spacing: -0.24px;
+  line-height: 15px;
+}
+
+.notice-heading {
+  color: $color-black;
   font-size: 18px;
-  font-family: Rubik Medium;
   letter-spacing: 0;
   line-height: 22px;
+  font-family: $font-family;
 }
-.description{
-  color:$color-black;
+
+.description {
+  color: $color-black;
   font-size: 14px;
   letter-spacing: 0;
   line-height: 18px;
-  font-family: rubik;
+  font-family: $font-family;
 }

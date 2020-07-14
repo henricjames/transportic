@@ -1,4 +1,5 @@
-
-<label class="notice-label">RENITETE</label>
-<h1 class="notice-heading">Lorem ipsum dolar sit amet,consecter </h1>
-<div class="description">Lorem ipsum dolar sit amet consecter adiscing elit sed to eld mod tempor incidedunt ut labore etol</div>
+<div class="container" *ngFor="let notice of notices">
+  <label class="notice-label">{{ 'NOTICES.SENDER' | translate }}</label>
+  <h1 class="notice-heading"> {{ notice.title }}</h1>
+  <div class="description">{{ notice.description }}</div>
+</div>
