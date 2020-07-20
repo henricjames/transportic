@@ -33,7 +33,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     ExternalLinksComponent,
     PincodeHeaderComponent,
   ],
-
   imports: [
     CommonModule,
     TranslateModule,

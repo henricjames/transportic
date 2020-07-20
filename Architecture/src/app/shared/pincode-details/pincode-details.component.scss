@@ -8,36 +8,41 @@
   letter-spacing: -0.1px;
   line-height: 13px;
 }
+
 .label {
   margin-top: 2px;
   font-size: 14px;
   font-family: $font_family_default;
 }
+
 .pincode {
-  margin-top: 10px;
+  margin-top: 22px;
   margin-bottom: 10px;
   box-sizing: border-box;
+
   &_success {
-    margin-left: 15px;
     border-left: 6px solid;
     border-left-color: get-color(green);
+
     .title {
       padding-left: 10px;
     }
+
     .label {
       padding-left: 10px;
     }
   }
 
   &_info {
-    margin-left: -15px;
     width: 100%;
     border-left: 6px solid;
     border-left-color: get-color(yellow);
     background-color: get-color(light-yellow);
+
     .title {
       padding-left: 10px;
     }
+
     .label {
       padding-left: 10px;
     }

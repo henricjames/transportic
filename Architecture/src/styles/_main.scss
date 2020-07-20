@@ -7,12 +7,3 @@ $font-family-default: "Rubik",
 sans-serif;
 $font-family: 'Rubik';
 $font-family-code: "Source Code Pro";
-
-*,
-html,
-body {
-  font-size: $font-size;
-  line-height: $line-height;
-  color: $color-black;
-  font-family: $font-family-default;
-}
