@@ -9,8 +9,6 @@ const routes: Routes = [
     path: 'registration',
     loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)
   },
-
-
 {
   path: 'userlogged',
   loadChildren: () =>

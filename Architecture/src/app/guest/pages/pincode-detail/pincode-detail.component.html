@@ -1,10 +1,34 @@
 <div class="pincode-list">
   <app-pincode-header></app-pincode-header>
-  <app-page-header labelname="{{ 'PINCODE.RELATEDDOC' | translate }}"></app-page-header>
-  <app-pincode-details title="MATRÍCULA DEL CONTENEDOR" labelname="ABC123456789" type="info"></app-pincode-details>
-  <app-pincode-details title="MATRÍCULA DEL CONTENEDOR" labelname="ABC123456789"></app-pincode-details>
-  <app-pincode-details title="PRECINTO" labelname="123456789"></app-pincode-details>
-  <app-pincode-related-document></app-pincode-related-document>
+
+  <app-page-header labelname="{{ 'PINCODE.INFORMATION' | translate }}"></app-page-header>
+  <app-pincode-details title="{{ 'PINCODE.REGISTRATION' | translate }}" labelname="ABC123456789"></app-pincode-details>
+  <app-pincode-details title="{{ 'PINCODE.EXPECTEDDATE' | translate }}" labelname="00/00/00 00:00h" type="info">
+  </app-pincode-details>
+  <app-pincode-details title="{{ 'PINCODE.BOOKING' | translate }}" labelname="00/00/00 00:00h" type="success">
+  </app-pincode-details>
+  <app-pincode-details title="{{ 'PINCODE.OCCUPATION' | translate }}" labelname="Baja 0% - 50%"></app-pincode-details>
+  <app-pincode-details title="{{ 'PINCODE.KINDOFCONTAINER' | translate }}" labelname="Referencia alfanumérica">
+  </app-pincode-details>
+  <app-pincode-details title="{{ 'PINCODE.SEAL' | translate }}" labelname="123456789ABC"></app-pincode-details>
+  <app-pincode-details title="{{ 'PINCODE.KIND' | translate }}" labelname="Recogida lleno"></app-pincode-details>
+  <app-pincode-details title="{{ 'PINCODE.RUT' | translate }}" labelname="38757058E7383202"></app-pincode-details>
+  <app-pincode-details title="{{ 'PINCODE.COMPANY' | translate }}" labelname="Nadal Fordwarding S.L.">
+  </app-pincode-details>
+  <app-pincode-details title="{{ 'PINCODE.VEHICLENUMBER' | translate }}" labelname="9988FGV"></app-pincode-details>
+
+  <app-page-header labelname="{{ 'PINCODE.DEPOSIT' | translate }}"></app-page-header>
+  <app-pincode-details title="{{ 'PINCODE.LOADTERMINAL' | translate }}" labelname="TCB Sur (NIF: B62120175)">
+  </app-pincode-details>
+  <app-pincode-details title="{{ 'PINCODE.ACCESSTIME' | translate }}" labelname="00/00/00 00:00h"></app-pincode-details>
   <app-external-links label="{{ 'EXTERNAL.CAMERA' | translate }}"></app-external-links>
+
+  <app-page-header labelname="{{ 'PINCODE.RELATEDDOC' | translate }}"></app-page-header>
+  <app-pincode-related-document></app-pincode-related-document>
+
+  <app-page-header labelname="{{ 'PINCODE.EXTERNALLINKS' | translate }}"></app-page-header>
+  <app-external-links label="{{ 'EXTERNAL.CALCULATION' | translate }}"></app-external-links>
+  <app-external-links label="{{ 'EXTERNAL.TERMINALBLOCK' | translate }}"></app-external-links>
+  <app-external-links label="{{ 'EXTERNAL.CERTIFICATE' | translate }}"></app-external-links>
 </div>
 <app-navigation-bar [guest]=true></app-navigation-bar>
