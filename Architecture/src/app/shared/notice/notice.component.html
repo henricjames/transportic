@@ -1,4 +1,4 @@
-<div class="container" *ngFor="let notice of notices">
+<div *ngFor="let notice of notices">
   <label class="notice-label">{{ 'NOTICES.SENDER' | translate }}</label>
   <h1 class="notice-heading"> {{ notice.title }}</h1>
   <div class="description">{{ notice.description }}</div>
