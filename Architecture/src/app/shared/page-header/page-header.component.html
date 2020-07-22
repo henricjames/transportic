@@ -1,6 +1,8 @@
 <header class="header pt-2">
   <h2 class="header__title">{{ title }}</h2>
-  <h4 class="header__sub-title">
-    <span class="header__label">{{ labelname }}</span>
-  </h4>
+  <ng-container *ngIf="labelname">
+    <h4 class="header__sub-title">
+      <span class="header__label">{{ labelname }}</span>
+    </h4>
+  </ng-container>
 </header>
