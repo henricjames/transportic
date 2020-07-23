@@ -95,5 +95,20 @@
     "CALCULATION": "CÁLCULO DE LA HORA DE LLEGADA PUERTO",
     "TERMINALBLOCK": "BLOQUE TERMINAL",
     "CERTIFICATE": "CERTIFICADO IDONEADAD"
+  },
+  "NOTICES": {
+    "NOTICES": "Avisos",
+    "SENDER": "REMITENTE"
+  },
+  "PROFILE": {
+    "PASSPORT": "NIF / NIE / Pasaporte",
+    "EMAIL": "Correo electrónico",
+    "GOOGLE": "Correo electrónico Google",
+    "SAVE": "GUARDAR",
+    "CANCEL": "CANCELAR",
+    "REQUEST": "Envíe una solicitud para operar con alguna empresa de transporte",
+    "SEND": "ENVIAR SOLICITUD",
+    "DATA": "DATOS",
+    "BUSINESS": "EMPRESAS"
   }
 }

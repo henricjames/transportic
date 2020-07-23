@@ -6,12 +6,14 @@ import { GuestRoutingModule } from './guest-routing.module';
 import { PincodeListComponent } from './pages/pincode-list/pincode-list.component';
 import { PincodeDetailComponent } from './pages/pincode-detail/pincode-detail.component';
 import { PincodeAddComponent } from './pages/pincode-add/pincode-add.component';
+import { NoticedetailsComponent } from './pages/noticedetails/noticedetails.component';
 
 @NgModule({
   declarations: [
     PincodeListComponent,
     PincodeDetailComponent,
     PincodeAddComponent,
+    NoticedetailsComponent,
   ],
   imports: [
     CommonModule,

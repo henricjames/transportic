@@ -1,0 +1,116 @@
+@import "../../../../../styles/main";
+
+.grey {
+  color: get-color(dark-grey);
+  height: 32px;
+  font-family: $font-family-default;
+  font-size: 13px;
+  letter-spacing: 0;
+  line-height: 16px;
+  padding-top: 4px;
+}
+
+.btn-accept {
+  height: 48px;
+  background-color: $color-primary;
+  margin-top: 23px;
+  color: $color-white;
+  font-family: $font-family-default;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+}
+
+.btn_register {
+  font-family: $font-family-default;
+  margin-top: 23px;
+  box-sizing: border-box;
+  height: 48px;
+  border: 1px solid get-color(light-grey);
+  border-radius: 4px;
+  background-color: get-color(white);
+  color: get-color(primary);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.profile {
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &__tabset {
+    height: -webkit-fill-available;
+    height: -moz-available;
+    height: fill-available;
+
+    ::ng-deep {
+      .nav.nav-tabs {
+        margin-bottom: 24px;
+        color: get-color(blue);
+        font-family: $font-family-code;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: -0.27px;
+        line-height: 18px;
+
+        .nav-item .nav-link {
+          color: get-color(blue);
+          padding-right: 0;
+          padding-left: 0;
+          margin-right: 10px;
+          border: 2px solid transparent;
+        }
+
+        .nav-item.active .nav-link {
+          border-bottom-color: get-color(primary);
+        }
+      }
+
+      .tab-content {
+        height: -webkit-fill-available;
+        height: -moz-available;
+        height: fill-available;
+        display: flex;
+      }
+    }
+  }
+
+  &__send {
+    height: calc(100% - 60px);
+  }
+
+  &__heading {}
+}
+
+.request {
+  height: 84px;
+  opacity: 0.25;
+  color: get-color(black);
+  font-family: $font-family-default;
+  font-size: 24px;
+  letter-spacing: -0.15px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.btn-send {
+  color: get-color(primary);
+  font-family: $font-family-default;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 17px;
+  text-align: center;
+  box-sizing: border-box;
+  height: 42px;
+  border: 1px solid get-color(light-grey);
+  border-radius: 21px;
+  background-color: get-color(white);
+  margin-top: 30px;
+  margin-bottom: 56px;
+}

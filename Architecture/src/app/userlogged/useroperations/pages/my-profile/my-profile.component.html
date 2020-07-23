@@ -1,0 +1,39 @@
+<div class="container-fluid profile">
+  <app-page-header title="{{ 'GUEST.PROFILE' | translate }}"></app-page-header>
+  <tabset class="profile__tabset">
+    <tab heading="{{ 'PROFILE.DATA' | translate }}" class="profile__heading">
+      <app-textfield labelname="{{ 'REGISTER.NAME' | translate }}*"></app-textfield>
+      <app-textfield labelname="{{ 'REGISTER.SURNAMES' | translate }}*"></app-textfield>
+      <app-textfield labelname="{{ 'PROFILE.PASSPORT' | translate }}*"></app-textfield>
+      <app-textfield labelname="{{ 'REGISTER.PHONE' | translate }}*"></app-textfield>
+      <app-textfield labelname="*{{ 'PROFILE.EMAIL' | translate }}"></app-textfield>
+      <app-textfield labelname="{{ 'PROFILE.GOOGLE' | translate }}"></app-textfield>
+      <label class="grey">{{ "REGISTER.PRIVACY" | translate }}
+        <a href="#">{{ "REGISTER.TERMSANDCONDITIONS" | translate }}</a>
+        {{ "REGISTER.SERVICE" | translate }}</label>
+      <div class="d-flex w-100">
+        <div class="w-100 pr-2">
+          <button type="button" class="btn btn_register w-100">
+            {{"PROFILE.CANCEL" | translate }}
+          </button>
+        </div>
+        <div class="w-100 pl-2">
+          <button type="button" class="btn btn-accept w-100">
+            {{ "PROFILE.SAVE" | translate }}
+          </button>
+        </div>
+      </div>
+    </tab>
+    <tab heading="{{ 'PROFILE.BUSINESS' | translate }}">
+      <div class="d-flex flex-column justify-content-center align-items-center profile__send">
+        <div class="request">
+          {{"PROFILE.REQUEST" | translate }}
+        </div>
+        <button type="button" class="btn btn-send">
+          {{"PROFILE.SEND" | translate }}
+        </button>
+      </div>
+    </tab>
+  </tabset>
+</div>
+<app-navigation-bar></app-navigation-bar>

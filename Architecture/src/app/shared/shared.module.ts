@@ -16,6 +16,8 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { PincodeRelatedDocumentComponent } from './pincode-related-document/pincode-related-document.component';
 import { ExternalLinksComponent } from './external-links/external-links.component';
 import { PincodeHeaderComponent } from './pincode-header/pincode-header.component';
+import { NoticeComponent } from './notice/notice.component';
+
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -32,6 +34,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     PincodeRelatedDocumentComponent,
     ExternalLinksComponent,
     PincodeHeaderComponent,
+    NoticeComponent,
   ],
   imports: [
     CommonModule,
@@ -45,6 +48,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     TranslateModule,
     AlertModule,
     TextfieldComponent,
+    NoticeComponent,
     ReactiveFormsModule,
     FormsModule,
     LoaderComponent,

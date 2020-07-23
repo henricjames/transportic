@@ -95,5 +95,20 @@
     "CALCULATION": "CALCULATION OF THE TIME OF ARRIVAL PUERTO",
     "TERMINALBLOCK": "TERMINAL BLOCK",
     "CERTIFICATE": "SUITABLE CERTIFICATE"
+  },
+  "NOTICES": {
+    "NOTICES": "Notices",
+    "SENDER": "SENDER"
+  },
+  "PROFILE": {
+    "PASSPORT": "NIF / NIE / Passport",
+    "EMAIL": "Email",
+    "GOOGLE": "Google Email",
+    "SAVE": "SAVE",
+    "CANCEL": "CANCEL",
+    "REQUEST": "Submit a request to operate with a transport company",
+    "SEND": "SEND REQUEST",
+    "DATA": "DATA",
+    "BUSINESS": "BUSINESS"
   }
 }
