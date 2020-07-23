@@ -110,5 +110,10 @@
     "SEND": "ENVIAR SOLICITUD",
     "DATA": "DATOS",
     "BUSINESS": "EMPRESAS"
+  },
+  "CONTACT": {
+    "SCHEDULE": "HORARIO",
+    "INFO": "De lunes a viernes de 6.00 a 20.00 sábados de 9.00 a 14.00 horas.",
+    "CONTACT": "Contacto"
   }
 }

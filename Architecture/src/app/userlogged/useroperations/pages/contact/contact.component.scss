@@ -1,0 +1,31 @@
+@import "../../../../../styles/main";
+
+.contact {
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &__text {
+    margin-left: 15px;
+    color: get-color(black);
+    font-family: $font-family;
+    font-size: 14px;
+  }
+
+  &__label {
+    margin-top: 220px;
+
+    .title {
+      color: get-color(blue);
+      font-family: $font-family;
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    .info {
+      color: get-color(black);
+      font-family: $font-family;
+      font-size: 12px;
+    }
+  }
+}
