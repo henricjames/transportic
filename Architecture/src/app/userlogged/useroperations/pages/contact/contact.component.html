@@ -1,0 +1,23 @@
+<div class="container-fluid contact pt-2">
+  <app-page-header title="{{ 'CONTACT.CONTACT' | translate }}" labelname="{{ 'LOGIN.TELEPHONE' | translate }}">
+  </app-page-header>
+  <a href="tel:{{phone}}">
+    <i class="fa fa-phone"></i>
+    <span class="contact__text">{{phone}}</span>
+  </a>
+  <app-page-header labelname="{{ 'LOGIN.EMAIL' | translate }}"></app-page-header>
+  <a href="mailto:{{email}}?subject=Mail from Our Site">
+    <i class="fa fa-envelope-o"></i>
+    <span class="contact__text">{{email}}</span>
+  </a>
+  <app-page-header labelname="{{ 'LOGIN.CHAT' | translate }}"></app-page-header>
+  <a href="sms://{{phone}}?body={{comment}}">
+    <i class="fa fa-comment-o"></i>
+    <span class="contact__text">{{comment}}</span>
+  </a>
+  <div class="contact__label">
+    <label class="title">{{ 'CONTACT.SCHEDULE' | translate }}:</label>
+    <label class="info">{{ 'CONTACT.INFO' | translate }}</label>
+  </div>
+</div>
+<app-navigation-bar></app-navigation-bar>

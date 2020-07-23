@@ -8,7 +8,7 @@
     </a>
   </li>
   <li *ngIf=!guest class="layout__item">
-    <a routerLink="">
+    <a href="">
       <img src="assets/images/orders.png" alt="orders" />
       <div class="layout__text">
         {{ "GUEST.ORDERS" | translate }}
@@ -24,7 +24,7 @@
     </a>
   </li>
   <li *ngIf=!guest class="layout__item">
-    <a routerLink="">
+    <a href="/userlogged/useroperations/profile">
       <img src="assets/images/profile.png" alt="profile" />
       <div class="layout__text">
         {{ "GUEST.PROFILE" | translate }}
@@ -32,7 +32,7 @@
     </a>
   </li>
   <li class="layout__item">
-    <a routerLink="">
+    <a href="/userlogged/useroperations/contact">
       <img src="assets/images/contact.png" alt="contact" />
       <div class="layout__text">
         {{ "GUEST.CONTACTS" | translate }}

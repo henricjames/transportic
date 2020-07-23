@@ -110,5 +110,10 @@
     "SEND": "SEND REQUEST",
     "DATA": "DATA",
     "BUSINESS": "BUSINESS"
+  },
+  "CONTACT": {
+    "SCHEDULE": "SCHEDULE",
+    "INFO": "From lunes to venues from 6.00 to 20.00 Saturdays from 9.00 to 14.00 hours.",
+    "CONTACT": "Contact"
   }
 }
